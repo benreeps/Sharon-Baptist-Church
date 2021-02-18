@@ -7,7 +7,13 @@
 
 import Foundation
 
+protocol ModelDelegate {
+    func videosFetched(_ videos: [Video])
+}
+
 class Model {
+    
+    var delegate: ModelDelegate?
     
     func getVideos() {
         
@@ -34,6 +40,11 @@ class Model {
                 
                 // Specify the type of data you want to decode the data into
                 let response = try decoder.decode(Response.self, from: data!)
+                
+                if response.items != nil {
+                    self.delegate?.videosFetched(response.items!)
+                }
+                
                 
                 dump(response)
             }
