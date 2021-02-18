@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		267C23D825D6FA32003FACFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C23D725D6FA32003FACFB /* AppDelegate.swift */; };
 		267C23DA25D6FA32003FACFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C23D925D6FA32003FACFB /* SceneDelegate.swift */; };
-		267C23DC25D6FA32003FACFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C23DB25D6FA32003FACFB /* ViewController.swift */; };
 		267C23DF25D6FA32003FACFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267C23DD25D6FA32003FACFB /* Main.storyboard */; };
 		267C23E125D6FA37003FACFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 267C23E025D6FA37003FACFB /* Assets.xcassets */; };
 		267C23E425D6FA37003FACFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267C23E225D6FA37003FACFB /* LaunchScreen.storyboard */; };
@@ -18,13 +17,13 @@
 		267C23FA25DC24DB003FACFB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C23F925DC24DB003FACFB /* Model.swift */; };
 		267C240525DC960E003FACFB /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240425DC960E003FACFB /* Response.swift */; };
 		267C240825DDA2D3003FACFB /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240725DDA2D3003FACFB /* ConstantsTemplate.swift */; };
+		267C240C25DDD8AA003FACFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240B25DDD8AA003FACFB /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		267C23D425D6FA32003FACFB /* SharonBaptistChurch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharonBaptistChurch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		267C23D725D6FA32003FACFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		267C23D925D6FA32003FACFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		267C23DB25D6FA32003FACFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		267C23DE25D6FA32003FACFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		267C23E025D6FA37003FACFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		267C23E325D6FA37003FACFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		267C23F925DC24DB003FACFB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		267C240425DC960E003FACFB /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		267C240725DDA2D3003FACFB /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
+		267C240B25DDD8AA003FACFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 		267C23F125D71D33003FACFB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				267C23DB25D6FA32003FACFB /* ViewController.swift */,
+				267C240B25DDD8AA003FACFB /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -192,13 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				267C23DC25D6FA32003FACFB /* ViewController.swift in Sources */,
 				267C23D825D6FA32003FACFB /* AppDelegate.swift in Sources */,
 				267C23DA25D6FA32003FACFB /* SceneDelegate.swift in Sources */,
 				267C240825DDA2D3003FACFB /* ConstantsTemplate.swift in Sources */,
 				267C23FA25DC24DB003FACFB /* Model.swift in Sources */,
 				267C23EE25D71CEC003FACFB /* Constants.swift in Sources */,
 				267C23F725DC21E3003FACFB /* Video.swift in Sources */,
+				267C240C25DDD8AA003FACFB /* ViewController.swift in Sources */,
 				267C240525DC960E003FACFB /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
