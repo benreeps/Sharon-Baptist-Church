@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol ModelDelegate {
+protocol PlaylistControllerDelegate {
     func videosFetched(_ videos: [Video])
 }
 
-class Model {
+class PlaylistController {
     
-    var delegate: ModelDelegate?
+    var delegate: PlaylistControllerDelegate?
     
     func getVideos() {
         
@@ -45,18 +45,12 @@ class Model {
                     self.delegate?.videosFetched(response.items!)
                 }
                 
-                
                 dump(response)
             }
             catch {
                 
                 
             }
-            
-            
-            
-            
-            
         }
         dataTask.resume() 
     }

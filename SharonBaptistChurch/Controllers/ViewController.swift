@@ -5,14 +5,14 @@
 //  Created by Benjamin Reeps on 2/17/21.
 //
 
-import Foundation
+
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ModelDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, PlaylistControllerDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let model = Model()
+    let playlistController = PlaylistController() 
     var videos = [Video]()
     
     override func viewDidLoad() {
@@ -23,20 +23,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.delegate = self
         
         // Set itself as the delegate of the model
-        model.delegate = self
+        playlistController.delegate = self
         
-        model.getVideos()
+        playlistController.getVideos()
     }
     
     //MARK:- Model Delegate Methods
     
     func videosFetched(_ videos: [Video]) {
-        
-        // Set the returned videos to our video property
-        self.videos = videos
-        
-        // Refresh the tableview
-        tableView.reloadData()
+        DispatchQueue.main.async {
+            
+            // Set the returned videos to our video property
+            self.videos = videos
+            
+            // Refresh the tableview
+            self.tableView.reloadData()
+        }
     }
    
     
@@ -50,12 +52,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEOCELL_ID, for: indexPath)
         
+        let title = self.videos[indexPath.row].title
+        cell.textLabel?.text = title
         
         return cell 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        
     }
     
 }
