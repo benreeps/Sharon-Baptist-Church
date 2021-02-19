@@ -58,6 +58,11 @@
                                                 <constraint firstItem="gm7-QZ-rdV" firstAttribute="leading" secondItem="iyj-I0-Gxj" secondAttribute="leading" constant="20" id="eIM-Cs-HZL"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="hzx-WW-MrG" id="U2N-jE-kSU"/>
+                                            <outlet property="thumbnailImageView" destination="CWb-sy-rno" id="cSu-Vi-Flw"/>
+                                            <outlet property="titleLabel" destination="1ck-in-jCJ" id="BLW-Vj-Zqf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
