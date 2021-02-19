@@ -57,6 +57,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		2640BD7C25E04F1A00E70A1F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				267C240725DDA2D3003FACFB /* ConstantsTemplate.swift */,
+				267C23ED25D71CEC003FACFB /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		267C23CB25D6FA32003FACFB = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +87,10 @@
 			children = (
 				267C23F025D71D13003FACFB /* Delegates */,
 				267C23F225D71D42003FACFB /* Storyboards */,
-				267C23F425D71D70003FACFB /* Models */,
+				2640BD7B25E04E8100E70A1F /* Views */,
 				267C23F125D71D33003FACFB /* Controllers */,
+				267C23F425D71D70003FACFB /* Models */,
+				2640BD7C25E04F1A00E70A1F /* Helpers */,
 				267C23F325D71D62003FACFB /* Assets */,
 			);
 			path = SharonBaptistChurch;
@@ -108,7 +119,6 @@
 			children = (
 				267C23DD25D6FA32003FACFB /* Main.storyboard */,
 				267C23E225D6FA37003FACFB /* LaunchScreen.storyboard */,
-				2640BD7B25E04E8100E70A1F /* Views */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -125,8 +135,6 @@
 		267C23F425D71D70003FACFB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				267C23ED25D71CEC003FACFB /* Constants.swift */,
-				267C240725DDA2D3003FACFB /* ConstantsTemplate.swift */,
 				267C23F625DC21E3003FACFB /* Video.swift */,
 				267C240425DC960E003FACFB /* Response.swift */,
 			);
