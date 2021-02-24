@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2640BD7925E04E2A00E70A1F /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640BD7825E04E2A00E70A1F /* VideoTableViewCell.swift */; };
 		2676B82D25E1A0A3003A911B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676B82C25E1A0A3003A911B /* CacheManager.swift */; };
+		2676B83125E5BF5A003A911B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676B83025E5BF5A003A911B /* DetailViewController.swift */; };
+		2676B83425E5D26B003A911B /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676B83325E5D26B003A911B /* DateManager.swift */; };
 		267C23D825D6FA32003FACFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C23D725D6FA32003FACFB /* AppDelegate.swift */; };
 		267C23DA25D6FA32003FACFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C23D925D6FA32003FACFB /* SceneDelegate.swift */; };
 		267C23DF25D6FA32003FACFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267C23DD25D6FA32003FACFB /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		2640BD7825E04E2A00E70A1F /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		2676B82C25E1A0A3003A911B /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		2676B83025E5BF5A003A911B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2676B83325E5D26B003A911B /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		267C23D425D6FA32003FACFB /* SharonBaptistChurch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharonBaptistChurch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		267C23D725D6FA32003FACFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		267C23D925D6FA32003FACFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 				267C240725DDA2D3003FACFB /* ConstantsTemplate.swift */,
 				2676B82C25E1A0A3003A911B /* CacheManager.swift */,
 				267C23ED25D71CEC003FACFB /* Constants.swift */,
+				2676B83325E5D26B003A911B /* DateManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 			children = (
 				267C23F925DC24DB003FACFB /* PlaylistController.swift */,
 				267C240B25DDD8AA003FACFB /* ViewController.swift */,
+				2676B83025E5BF5A003A911B /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -214,6 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2676B83125E5BF5A003A911B /* DetailViewController.swift in Sources */,
+				2676B83425E5D26B003A911B /* DateManager.swift in Sources */,
 				267C23D825D6FA32003FACFB /* AppDelegate.swift in Sources */,
 				267C23DA25D6FA32003FACFB /* SceneDelegate.swift in Sources */,
 				267C240825DDA2D3003FACFB /* ConstantsTemplate.swift in Sources */,
