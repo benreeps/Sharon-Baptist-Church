@@ -16,6 +16,6 @@ struct DateManager {
         df.dateFormat = Constants.DATE_FORMAT_STRING
         
         return df
-    }() 
+    }()
     
 }
