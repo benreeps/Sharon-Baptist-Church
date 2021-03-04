@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E9F388EBCB740EF53FB79AA /* Pods_SharonBaptistChurch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537906CC0E4BADA60E3A714E /* Pods_SharonBaptistChurch.framework */; };
 		260B6DEB25ED6F34000FFFFF /* MediaOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6DEA25ED6F34000FFFFF /* MediaOptionsViewController.swift */; };
+		260B6DF225F15BFD000FFFFF /* LiveStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6DF125F15BFD000FFFFF /* LiveStreamViewController.swift */; };
 		2640BD7925E04E2A00E70A1F /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640BD7825E04E2A00E70A1F /* VideoTableViewCell.swift */; };
 		2676B82D25E1A0A3003A911B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676B82C25E1A0A3003A911B /* CacheManager.swift */; };
 		2676B83125E5BF5A003A911B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676B83025E5BF5A003A911B /* DetailViewController.swift */; };
@@ -28,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		260B6DEA25ED6F34000FFFFF /* MediaOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaOptionsViewController.swift; sourceTree = "<group>"; };
+		260B6DF125F15BFD000FFFFF /* LiveStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamViewController.swift; sourceTree = "<group>"; };
 		2640BD7825E04E2A00E70A1F /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		2676B82C25E1A0A3003A911B /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		2676B83025E5BF5A003A911B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +49,9 @@
 		267C240425DC960E003FACFB /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		267C240725DDA2D3003FACFB /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
 		267C240B25DDD8AA003FACFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		537906CC0E4BADA60E3A714E /* Pods_SharonBaptistChurch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharonBaptistChurch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BAD121BE7F3B741D00E774E /* Pods-SharonBaptistChurch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharonBaptistChurch.debug.xcconfig"; path = "Target Support Files/Pods-SharonBaptistChurch/Pods-SharonBaptistChurch.debug.xcconfig"; sourceTree = "<group>"; };
+		F0CBF11F501FD5868A836027 /* Pods-SharonBaptistChurch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharonBaptistChurch.release.xcconfig"; path = "Target Support Files/Pods-SharonBaptistChurch/Pods-SharonBaptistChurch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2676B83825E6CD1F003A911B /* WebKit.framework in Frameworks */,
+				1E9F388EBCB740EF53FB79AA /* Pods_SharonBaptistChurch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				2676B83725E6CD1F003A911B /* WebKit.framework */,
+				537906CC0E4BADA60E3A714E /* Pods_SharonBaptistChurch.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,6 +101,7 @@
 				267C23D625D6FA32003FACFB /* SharonBaptistChurch */,
 				267C23D525D6FA32003FACFB /* Products */,
 				2676B83625E6CD1F003A911B /* Frameworks */,
+				A6C6C6A64A5C97413044DF4A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +141,7 @@
 			children = (
 				267C23F925DC24DB003FACFB /* PlaylistController.swift */,
 				267C240B25DDD8AA003FACFB /* ViewController.swift */,
+				260B6DF125F15BFD000FFFFF /* LiveStreamViewController.swift */,
 				2676B83025E5BF5A003A911B /* DetailViewController.swift */,
 				260B6DEA25ED6F34000FFFFF /* MediaOptionsViewController.swift */,
 			);
@@ -165,6 +175,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A6C6C6A64A5C97413044DF4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BAD121BE7F3B741D00E774E /* Pods-SharonBaptistChurch.debug.xcconfig */,
+				F0CBF11F501FD5868A836027 /* Pods-SharonBaptistChurch.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 267C23E825D6FA37003FACFB /* Build configuration list for PBXNativeTarget "SharonBaptistChurch" */;
 			buildPhases = (
+				2AFF9B2A07B54ABB6AF4F189 /* [CP] Check Pods Manifest.lock */,
 				267C23D025D6FA32003FACFB /* Sources */,
 				267C23D125D6FA32003FACFB /* Frameworks */,
 				267C23D225D6FA32003FACFB /* Resources */,
+				B549D9F6F295A8B2761CB322 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +251,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AFF9B2A07B54ABB6AF4F189 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SharonBaptistChurch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B549D9F6F295A8B2761CB322 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SharonBaptistChurch/Pods-SharonBaptistChurch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SharonBaptistChurch/Pods-SharonBaptistChurch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharonBaptistChurch/Pods-SharonBaptistChurch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		267C23D025D6FA32003FACFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -245,6 +308,7 @@
 				267C23EE25D71CEC003FACFB /* Constants.swift in Sources */,
 				2676B82D25E1A0A3003A911B /* CacheManager.swift in Sources */,
 				267C23F725DC21E3003FACFB /* Video.swift in Sources */,
+				260B6DF225F15BFD000FFFFF /* LiveStreamViewController.swift in Sources */,
 				267C240C25DDD8AA003FACFB /* ViewController.swift in Sources */,
 				267C240525DC960E003FACFB /* Response.swift in Sources */,
 				2640BD7925E04E2A00E70A1F /* VideoTableViewCell.swift in Sources */,
@@ -391,6 +455,7 @@
 		};
 		267C23E925D6FA37003FACFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BAD121BE7F3B741D00E774E /* Pods-SharonBaptistChurch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -410,6 +475,7 @@
 		};
 		267C23EA25D6FA37003FACFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0CBF11F501FD5868A836027 /* Pods-SharonBaptistChurch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
