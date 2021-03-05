@@ -6,25 +6,17 @@
 //
 
 import UIKit
-import youtube_ios_player_helper 
+import youtube_ios_player_helper
 
 class LiveStreamViewController: UIViewController {
-
+    
+    @IBOutlet weak var liveVideoPlayerView: YTPlayerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.liveVideoPlayerView.load(withVideoId: "Ap89DSOItNU")
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
