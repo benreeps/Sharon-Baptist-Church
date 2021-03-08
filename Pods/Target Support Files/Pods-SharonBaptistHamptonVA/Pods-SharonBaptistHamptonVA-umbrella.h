@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_SharonBaptistChurchVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_SharonBaptistChurchVersionString[];
+FOUNDATION_EXPORT double Pods_SharonBaptistHamptonVAVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SharonBaptistHamptonVAVersionString[];
 
