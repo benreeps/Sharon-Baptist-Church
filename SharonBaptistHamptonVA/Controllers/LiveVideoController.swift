@@ -6,16 +6,16 @@
 //
 
 import Foundation
-/*
+
 protocol LiveVideoControllerDelegate {
-    func liveVideosFetched(_ videos: [Video])
+    func videosFetched(_ videos: [Video])
 }
 
 class LiveVideoController {
     
     var delegate: LiveVideoControllerDelegate?
     
-    func getVideos() {
+    func getLiveVideo() {
         
         let url = URL(string: Constants.API_URL)
         guard url != nil else {return}
@@ -56,4 +56,4 @@ class LiveVideoController {
     }
     
 }
-*/
+

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, PlaylistControllerDelegate {
+class PlaylistViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, PlaylistControllerDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     

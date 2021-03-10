@@ -15,7 +15,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var textView: UITextView!
     
-    var video:Video?
+    var video: Video?
 
     override func viewDidLoad() {
         super.viewDidLoad()

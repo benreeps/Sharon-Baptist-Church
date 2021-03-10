@@ -76,7 +76,7 @@
         <!--All Services-->
         <scene sceneID="9LV-af-p39">
             <objects>
-                <viewController id="cxp-cL-Wjc" customClass="ViewController" customModule="SharonBaptistHamptonVA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cxp-cL-Wjc" customClass="PlaylistViewController" customModule="SharonBaptistHamptonVA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IGw-eS-ycM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -274,31 +274,37 @@
             </objects>
             <point key="canvasLocation" x="1735" y="-541"/>
         </scene>
-        <!--Live Stream View Controller-->
+        <!--Live Service -->
         <scene sceneID="T7v-Tv-uEr">
             <objects>
-                <viewController id="vvy-GN-kht" customClass="LiveStreamViewController" customModule="SharonBaptistHamptonVA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vvy-GN-kht" customClass="LiveVideoViewController" customModule="SharonBaptistHamptonVA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dPo-C2-W1K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="085-xf-uao">
-                                <rect key="frame" x="20" y="106" width="374" height="702"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="085-xf-uao">
+                                <rect key="frame" x="20" y="158" width="374" height="280.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCN-S6-eku">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="451"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCN-S6-eku">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="YGP-yy-GL7"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N50-kR-jZ3">
-                                        <rect key="frame" x="0.0" y="461" width="374" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N50-kR-jZ3">
+                                        <rect key="frame" x="0.0" y="35" width="374" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="qWS-Wg-wtT"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJ4-Ms-V4d" customClass="YTPlayerView">
-                                        <rect key="frame" x="0.0" y="491.5" width="374" height="210.5"/>
+                                        <rect key="frame" x="0.0" y="70" width="374" height="210.5"/>
                                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="SJ4-Ms-V4d" secondAttribute="height" multiplier="1280:720" id="AGX-2K-kkJ"/>
@@ -312,11 +318,10 @@
                         <constraints>
                             <constraint firstItem="eeK-wb-bvL" firstAttribute="trailing" secondItem="085-xf-uao" secondAttribute="trailing" constant="20" id="EEV-ZL-bjP"/>
                             <constraint firstItem="085-xf-uao" firstAttribute="leading" secondItem="eeK-wb-bvL" secondAttribute="leading" constant="20" id="Pjv-Zq-huY"/>
-                            <constraint firstItem="085-xf-uao" firstAttribute="top" secondItem="eeK-wb-bvL" secondAttribute="top" constant="50" id="lvf-c6-tBy"/>
-                            <constraint firstItem="eeK-wb-bvL" firstAttribute="bottom" secondItem="085-xf-uao" secondAttribute="bottom" id="yT0-SY-Fdc"/>
+                            <constraint firstItem="085-xf-uao" firstAttribute="top" secondItem="eeK-wb-bvL" secondAttribute="top" constant="50" id="bXQ-u3-7cB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="LCF-GP-j2F"/>
+                    <navigationItem key="navigationItem" title="Live Service " id="LCF-GP-j2F"/>
                     <connections>
                         <outlet property="dateLabel" destination="N50-kR-jZ3" id="5Xy-xg-H77"/>
                         <outlet property="liveVideoPlayerView" destination="SJ4-Ms-V4d" id="DXs-Pt-2s0"/>
@@ -348,8 +353,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gH0-Ey-gt3" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ia6-08-A4Z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ia6-08-A4Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

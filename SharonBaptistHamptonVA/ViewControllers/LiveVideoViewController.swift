@@ -8,8 +8,7 @@
 import UIKit
 import youtube_ios_player_helper
 
-class LiveStreamViewController: UIViewController {
-    
+class LiveVideoViewController: UIViewController {
     
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!

@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		260B6DEB25ED6F34000FFFFF /* MediaOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6DEA25ED6F34000FFFFF /* MediaOptionsViewController.swift */; };
-		260B6DF225F15BFD000FFFFF /* LiveStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6DF125F15BFD000FFFFF /* LiveStreamViewController.swift */; };
+		260B6DF225F15BFD000FFFFF /* LiveVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6DF125F15BFD000FFFFF /* LiveVideoViewController.swift */; };
 		260B6DF725F2C679000FFFFF /* LiveVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6DF625F2C678000FFFFF /* LiveVideo.swift */; };
 		260B6DFA25F2CC19000FFFFF /* LiveVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6DF925F2CC19000FFFFF /* LiveVideoController.swift */; };
+		260B6E0725F807EC000FFFFF /* LiveResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6E0625F807EC000FFFFF /* LiveResponse.swift */; };
 		2640BD7925E04E2A00E70A1F /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640BD7825E04E2A00E70A1F /* VideoTableViewCell.swift */; };
 		2676B82D25E1A0A3003A911B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676B82C25E1A0A3003A911B /* CacheManager.swift */; };
 		2676B83125E5BF5A003A911B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676B83025E5BF5A003A911B /* DetailViewController.swift */; };
@@ -26,16 +27,17 @@
 		267C23FA25DC24DB003FACFB /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C23F925DC24DB003FACFB /* PlaylistController.swift */; };
 		267C240525DC960E003FACFB /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240425DC960E003FACFB /* Response.swift */; };
 		267C240825DDA2D3003FACFB /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240725DDA2D3003FACFB /* ConstantsTemplate.swift */; };
-		267C240C25DDD8AA003FACFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240B25DDD8AA003FACFB /* ViewController.swift */; };
+		267C240C25DDD8AA003FACFB /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240B25DDD8AA003FACFB /* PlaylistViewController.swift */; };
 		2FFB27B790D158D2AED37EE8 /* Pods_SharonBaptistHamptonVA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251E40D501372F2FA8E949A6 /* Pods_SharonBaptistHamptonVA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		251E40D501372F2FA8E949A6 /* Pods_SharonBaptistHamptonVA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharonBaptistHamptonVA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		260B6DEA25ED6F34000FFFFF /* MediaOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaOptionsViewController.swift; sourceTree = "<group>"; };
-		260B6DF125F15BFD000FFFFF /* LiveStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamViewController.swift; sourceTree = "<group>"; };
+		260B6DF125F15BFD000FFFFF /* LiveVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoViewController.swift; sourceTree = "<group>"; };
 		260B6DF625F2C678000FFFFF /* LiveVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideo.swift; sourceTree = "<group>"; };
 		260B6DF925F2CC19000FFFFF /* LiveVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoController.swift; sourceTree = "<group>"; };
+		260B6E0625F807EC000FFFFF /* LiveResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveResponse.swift; sourceTree = "<group>"; };
 		2640BD7825E04E2A00E70A1F /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		2676B82C25E1A0A3003A911B /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		2676B83025E5BF5A003A911B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +55,7 @@
 		267C23F925DC24DB003FACFB /* PlaylistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistController.swift; sourceTree = "<group>"; };
 		267C240425DC960E003FACFB /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		267C240725DDA2D3003FACFB /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
-		267C240B25DDD8AA003FACFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		267C240B25DDD8AA003FACFB /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		5BAD121BE7F3B741D00E774E /* Pods-SharonBaptistChurch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharonBaptistChurch.debug.xcconfig"; path = "Target Support Files/Pods-SharonBaptistChurch/Pods-SharonBaptistChurch.debug.xcconfig"; sourceTree = "<group>"; };
 		D2DC51D3E8668F506943FF05 /* Pods-SharonBaptistHamptonVA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharonBaptistHamptonVA.release.xcconfig"; path = "Target Support Files/Pods-SharonBaptistHamptonVA/Pods-SharonBaptistHamptonVA.release.xcconfig"; sourceTree = "<group>"; };
 		F0CBF11F501FD5868A836027 /* Pods-SharonBaptistChurch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharonBaptistChurch.release.xcconfig"; path = "Target Support Files/Pods-SharonBaptistChurch/Pods-SharonBaptistChurch.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +75,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		260B6E0A25F80A60000FFFFF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				267C240B25DDD8AA003FACFB /* PlaylistViewController.swift */,
+				260B6DF125F15BFD000FFFFF /* LiveVideoViewController.swift */,
+				2676B83025E5BF5A003A911B /* DetailViewController.swift */,
+				260B6DEA25ED6F34000FFFFF /* MediaOptionsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		2640BD7B25E04E8100E70A1F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,12 +135,13 @@
 		267C23D625D6FA32003FACFB /* SharonBaptistHamptonVA */ = {
 			isa = PBXGroup;
 			children = (
-				267C23F025D71D13003FACFB /* Delegates */,
 				267C23F225D71D42003FACFB /* Storyboards */,
-				2640BD7B25E04E8100E70A1F /* Views */,
 				267C23F125D71D33003FACFB /* Controllers */,
+				260B6E0A25F80A60000FFFFF /* ViewControllers */,
+				2640BD7B25E04E8100E70A1F /* Views */,
 				267C23F425D71D70003FACFB /* Models */,
 				2640BD7C25E04F1A00E70A1F /* Helpers */,
+				267C23F025D71D13003FACFB /* Delegates */,
 				267C23F325D71D62003FACFB /* Assets */,
 			);
 			path = SharonBaptistHamptonVA;
@@ -147,10 +161,6 @@
 			children = (
 				267C23F925DC24DB003FACFB /* PlaylistController.swift */,
 				260B6DF925F2CC19000FFFFF /* LiveVideoController.swift */,
-				267C240B25DDD8AA003FACFB /* ViewController.swift */,
-				260B6DF125F15BFD000FFFFF /* LiveStreamViewController.swift */,
-				2676B83025E5BF5A003A911B /* DetailViewController.swift */,
-				260B6DEA25ED6F34000FFFFF /* MediaOptionsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,6 +189,7 @@
 				267C23F625DC21E3003FACFB /* Video.swift */,
 				260B6DF625F2C678000FFFFF /* LiveVideo.swift */,
 				267C240425DC960E003FACFB /* Response.swift */,
+				260B6E0625F807EC000FFFFF /* LiveResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -315,12 +326,13 @@
 				267C240825DDA2D3003FACFB /* ConstantsTemplate.swift in Sources */,
 				260B6DEB25ED6F34000FFFFF /* MediaOptionsViewController.swift in Sources */,
 				267C23FA25DC24DB003FACFB /* PlaylistController.swift in Sources */,
+				260B6E0725F807EC000FFFFF /* LiveResponse.swift in Sources */,
 				267C23EE25D71CEC003FACFB /* Constants.swift in Sources */,
 				2676B82D25E1A0A3003A911B /* CacheManager.swift in Sources */,
 				267C23F725DC21E3003FACFB /* Video.swift in Sources */,
-				260B6DF225F15BFD000FFFFF /* LiveStreamViewController.swift in Sources */,
+				260B6DF225F15BFD000FFFFF /* LiveVideoViewController.swift in Sources */,
 				260B6DF725F2C679000FFFFF /* LiveVideo.swift in Sources */,
-				267C240C25DDD8AA003FACFB /* ViewController.swift in Sources */,
+				267C240C25DDD8AA003FACFB /* PlaylistViewController.swift in Sources */,
 				267C240525DC960E003FACFB /* Response.swift in Sources */,
 				2640BD7925E04E2A00E70A1F /* VideoTableViewCell.swift in Sources */,
 				260B6DFA25F2CC19000FFFFF /* LiveVideoController.swift in Sources */,
