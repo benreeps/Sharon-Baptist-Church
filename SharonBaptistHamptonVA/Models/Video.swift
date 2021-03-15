@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct Video: Decodable {
     
     var videoId = ""

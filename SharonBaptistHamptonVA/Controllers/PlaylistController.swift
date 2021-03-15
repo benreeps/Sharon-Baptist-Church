@@ -42,9 +42,11 @@ class PlaylistController {
                 let response = try decoder.decode(Response.self, from: data!)
                 
                 if response.items != nil {
-                    self.delegate?.videosFetched(response.items!)
+                    
+                    DispatchQueue.main.async {
+                        self.delegate?.videosFetched(response.items!)
+                    }
                 }
-                
                 dump(response)
             }
             catch {

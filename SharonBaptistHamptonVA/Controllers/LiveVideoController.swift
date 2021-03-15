@@ -8,16 +8,16 @@
 import Foundation
 
 protocol LiveVideoControllerDelegate {
-    func videosFetched(_ videos: [Video])
+    func liveVideosFetched(_ liveVideos: [LiveVideo])
 }
 
 class LiveVideoController {
     
     var delegate: LiveVideoControllerDelegate?
     
-    func getLiveVideo() {
+    func getLiveVideos() {
         
-        let url = URL(string: Constants.API_URL)
+        let url = URL(string: Constants.API_LIVE_URL)
         guard url != nil else {return}
         
         // Get a URLSession object
@@ -39,17 +39,22 @@ class LiveVideoController {
                 decoder.dateDecodingStrategy = .iso8601
                 
                 // Specify the type of data you want to decode the data into
-                let response = try decoder.decode(Response.self, from: data!)
                 
-                if response.items != nil {
-                    self.delegate?.videosFetched(response.items!)
+                let liveResponse = try decoder.decode(LiveResponse.self, from: data!)
+        //BP
+                if liveResponse.items != nil {
+                    
+                    DispatchQueue.main.async {
+                        self.delegate?.liveVideosFetched(liveResponse.items!)
+                    }
+                    
                 }
                 
-                dump(response)
+                dump(liveResponse)
             }
             catch {
                 
-                
+                print("err")
             }
         }
         dataTask.resume()

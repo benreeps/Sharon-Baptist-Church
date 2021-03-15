@@ -9,7 +9,7 @@ import Foundation
 
 struct LiveVideo: Decodable {
     
-    var streamId = ""
+    var videoId = ""
     var title = ""
     var published = Date()
     var lifeCycleStatus = ""
@@ -18,11 +18,10 @@ struct LiveVideo: Decodable {
         
         case snippet
         case status
-        case contentDetails
+        case videoId = "id"
         
         case published = "publishedAt"
         case title
-        case streamId = "boundStreamId"
         case lifeCycleStatus
         
     }
@@ -35,14 +34,11 @@ struct LiveVideo: Decodable {
         self.title = try snippetContainer.decode(String.self, forKey: .title)
         self.published = try snippetContainer.decode(Date.self, forKey: .published)
         
-        
         let statusContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .status)
         
         self.lifeCycleStatus = try statusContainer.decode(String.self, forKey: .lifeCycleStatus)
         
-        let contentDetailsContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .contentDetails)
-        
-        self.streamId = try contentDetailsContainer.decode(String.self, forKey: .streamId)
+        self.videoId = try container.decode(String.self, forKey: .videoId)
         
     }
     

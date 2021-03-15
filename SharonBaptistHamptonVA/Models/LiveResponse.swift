@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LiveResponse {
+struct LiveResponse: Decodable {
     
     var items: [LiveVideo]?
     

@@ -316,9 +316,9 @@
                         <viewLayoutGuide key="safeArea" id="eeK-wb-bvL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eeK-wb-bvL" firstAttribute="trailing" secondItem="085-xf-uao" secondAttribute="trailing" constant="20" id="EEV-ZL-bjP"/>
-                            <constraint firstItem="085-xf-uao" firstAttribute="leading" secondItem="eeK-wb-bvL" secondAttribute="leading" constant="20" id="Pjv-Zq-huY"/>
-                            <constraint firstItem="085-xf-uao" firstAttribute="top" secondItem="eeK-wb-bvL" secondAttribute="top" constant="50" id="bXQ-u3-7cB"/>
+                            <constraint firstItem="085-xf-uao" firstAttribute="leading" secondItem="dPo-C2-W1K" secondAttribute="leadingMargin" id="IIv-9q-0ei"/>
+                            <constraint firstItem="085-xf-uao" firstAttribute="top" secondItem="dPo-C2-W1K" secondAttribute="topMargin" constant="50" id="Pa0-Cs-Ar0"/>
+                            <constraint firstItem="085-xf-uao" firstAttribute="trailing" secondItem="dPo-C2-W1K" secondAttribute="trailingMargin" id="uxF-dr-GRl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Live Service " id="LCF-GP-j2F"/>
