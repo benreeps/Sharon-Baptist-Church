@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import OAuth2
 
 protocol LiveVideoControllerDelegate {
     func liveVideosFetched(_ liveVideos: [LiveVideo])

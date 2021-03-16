@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		260B6DF725F2C679000FFFFF /* LiveVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6DF625F2C678000FFFFF /* LiveVideo.swift */; };
 		260B6DFA25F2CC19000FFFFF /* LiveVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6DF925F2CC19000FFFFF /* LiveVideoController.swift */; };
 		260B6E0725F807EC000FFFFF /* LiveResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6E0625F807EC000FFFFF /* LiveResponse.swift */; };
+		260B6E1025FFBA96000FFFFF /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 260B6E0F25FFBA96000FFFFF /* OAuth2 */; };
 		2640BD7925E04E2A00E70A1F /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640BD7825E04E2A00E70A1F /* VideoTableViewCell.swift */; };
 		2676B82D25E1A0A3003A911B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676B82C25E1A0A3003A911B /* CacheManager.swift */; };
 		2676B83125E5BF5A003A911B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676B83025E5BF5A003A911B /* DetailViewController.swift */; };
@@ -67,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260B6E1025FFBA96000FFFFF /* OAuth2 in Frameworks */,
 				2676B83825E6CD1F003A911B /* WebKit.framework in Frameworks */,
 				2FFB27B790D158D2AED37EE8 /* Pods_SharonBaptistHamptonVA.framework in Frameworks */,
 			);
@@ -223,6 +225,9 @@
 			dependencies = (
 			);
 			name = SharonBaptistHamptonVA;
+			packageProductDependencies = (
+				260B6E0F25FFBA96000FFFFF /* OAuth2 */,
+			);
 			productName = SharonBaptistChurch;
 			productReference = 267C23D425D6FA32003FACFB /* SharonBaptistHamptonVA.app */;
 			productType = "com.apple.product-type.application";
@@ -250,6 +255,9 @@
 				Base,
 			);
 			mainGroup = 267C23CB25D6FA32003FACFB;
+			packageReferences = (
+				260B6E0E25FFBA95000FFFFF /* XCRemoteSwiftPackageReference "OAuth2" */,
+			);
 			productRefGroup = 267C23D525D6FA32003FACFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -539,6 +547,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		260B6E0E25FFBA95000FFFFF /* XCRemoteSwiftPackageReference "OAuth2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/p2/OAuth2.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		260B6E0F25FFBA96000FFFFF /* OAuth2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 260B6E0E25FFBA95000FFFFF /* XCRemoteSwiftPackageReference "OAuth2" */;
+			productName = OAuth2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 267C23CC25D6FA32003FACFB /* Project object */;
 }
