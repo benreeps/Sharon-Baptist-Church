@@ -23,7 +23,7 @@ class LiveVideoViewController: UIViewController, LiveVideoControllerDelegate {
         
         liveVideoController.delegate = self
         
-        liveVideoController.getLiveVideos()
+     //   liveVideoController.getLiveVideos()
         
     }
     
