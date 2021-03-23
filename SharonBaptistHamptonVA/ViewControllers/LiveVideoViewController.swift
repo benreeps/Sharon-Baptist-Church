@@ -65,3 +65,4 @@ class LiveVideoViewController: UIViewController, LiveVideoControllerDelegate {
         self.dateLabel.text = DateManager.videoDateFormatter.string(from: date)
     }
 }
+

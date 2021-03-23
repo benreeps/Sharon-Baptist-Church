@@ -5,14 +5,14 @@
 //  Created by Benjamin Reeps on 2/17/21.
 //
 
-
+import Foundation
 import UIKit
 
-class PlaylistViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, PlaylistControllerDelegate {
+class PlaylistViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, PlaylistModelDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let playlistController = PlaylistController() 
+    let playlistModel = PlaylistModel()
     var videos = [Video]()
     
     override func viewDidLoad() {
@@ -23,9 +23,9 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
         tableView.delegate = self
         
         // Set itself as the delegate of the model
-        playlistController.delegate = self
+        playlistModel.delegate = self
         
-        playlistController.getVideos()
+        playlistModel.getVideos()
     }
     
     //MARK:- Model Delegate Methods

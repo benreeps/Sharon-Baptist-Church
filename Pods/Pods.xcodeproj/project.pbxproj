@@ -11,10 +11,8 @@
 		37DBCF7C28EB92896819EE39219A361C /* Pods-SharonBaptistHamptonVA-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EDCAB3757608159AF6CC253D317816C /* Pods-SharonBaptistHamptonVA-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76436EB35FF2C7D0BF611CBF40734D60 /* Pods-SharonBaptistHamptonVA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C87466E2EED3983ABB87C599AA45E1 /* Pods-SharonBaptistHamptonVA-dummy.m */; };
 		7D8C05366F87C046219EDCB835447400 /* youtube-ios-player-helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B46684168265DE675DF96A99A4F5DFCF /* youtube-ios-player-helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E43E8D7BF0396E9899702B7867D5C6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC1182C8415D263FF3E4D6A690614 /* Foundation.framework */; };
 		95360566E941F235D6B8CE1C4C3035D1 /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01917CB7A6E6A5FB2437D83425CB672B /* youtube-ios-player-helper-dummy.m */; };
 		A8C22822FA929E89335F959F79BD29D2 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B7B115E519CCAADD026770D101C4CBD0 /* Assets.bundle */; };
-		CF54FBC044CC3EFEC4309420EE774826 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC1182C8415D263FF3E4D6A690614 /* Foundation.framework */; };
 		D03B6BD25AEC918C55C1A092C4ED472B /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D98F5B64E8D695FF19F84C2EA6E9AC /* YTPlayerView.m */; };
 /* End PBXBuildFile section */
 
@@ -29,103 +27,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		004F485E099233838C495CD5E6E91DFF /* OIDEndSessionRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDEndSessionRequest.h; path = Source/AppAuthCore/OIDEndSessionRequest.h; sourceTree = "<group>"; };
 		01917CB7A6E6A5FB2437D83425CB672B /* youtube-ios-player-helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "youtube-ios-player-helper-dummy.m"; sourceTree = "<group>"; };
-		0572E131966024051896FDFFF103C880 /* OIDURLQueryComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDURLQueryComponent.m; path = Source/AppAuthCore/OIDURLQueryComponent.m; sourceTree = "<group>"; };
-		06918337B519DACEB79F0F33A1784314 /* OIDRegistrationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDRegistrationResponse.h; path = Source/AppAuthCore/OIDRegistrationResponse.h; sourceTree = "<group>"; };
-		080B00727B741CC1DE93FBC8DCE10D76 /* OIDGrantTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDGrantTypes.h; path = Source/AppAuthCore/OIDGrantTypes.h; sourceTree = "<group>"; };
-		08695FB346A637B7457900D780C3689E /* OIDURLSessionProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDURLSessionProvider.m; path = Source/AppAuthCore/OIDURLSessionProvider.m; sourceTree = "<group>"; };
-		0BB98A7DFA8A85CFF0032C1062DC656D /* AppAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppAuth.release.xcconfig; sourceTree = "<group>"; };
-		0C5AA31FD0C7A718739B074D9666AC51 /* OIDRegistrationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDRegistrationRequest.m; path = Source/AppAuthCore/OIDRegistrationRequest.m; sourceTree = "<group>"; };
-		0E96857D44724A0B98F3CEABBB12053F /* OIDClientMetadataParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDClientMetadataParameters.m; path = Source/AppAuthCore/OIDClientMetadataParameters.m; sourceTree = "<group>"; };
-		0F0ECBFDBC9DF7ACC3E04A9132BE9AD3 /* OIDFieldMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDFieldMapping.h; path = Source/AppAuthCore/OIDFieldMapping.h; sourceTree = "<group>"; };
 		106336F2774090341484BC542AEF0A2D /* Pods-SharonBaptistHamptonVA-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SharonBaptistHamptonVA-acknowledgements.plist"; sourceTree = "<group>"; };
 		1093C9796BE24399B4F9179E6744E2ED /* youtube-ios-player-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.debug.xcconfig"; sourceTree = "<group>"; };
-		1362AFE9B67C4A087BC45E62E8BBB4F9 /* OIDExternalUserAgentSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentSession.h; path = Source/AppAuthCore/OIDExternalUserAgentSession.h; sourceTree = "<group>"; };
-		1450F13B5C305F1B77E75114D6666151 /* OIDTokenResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenResponse.h; path = Source/AppAuthCore/OIDTokenResponse.h; sourceTree = "<group>"; };
 		159B0DDFA362F3BA48333DFD1BAA22D7 /* Pods-SharonBaptistHamptonVA-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SharonBaptistHamptonVA-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1817B5233F1E3071769F7A84BFADB852 /* YTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = Classes/YTPlayerView.h; sourceTree = "<group>"; };
-		1AA6C018CC1DF52FD8CB073CBB6BBA09 /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/AppAuthCore/OIDFieldMapping.m; sourceTree = "<group>"; };
-		1AAF1DA216C2D50B7DC0B4A02FC08469 /* OIDScopes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopes.h; path = Source/AppAuthCore/OIDScopes.h; sourceTree = "<group>"; };
-		1D7F52E9440D6BFF0B1159CE55091460 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
-		259D49999C20A59949C00C9D7FF61930 /* OIDExternalUserAgentIOSCustomBrowser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentIOSCustomBrowser.m; path = Source/AppAuth/iOS/OIDExternalUserAgentIOSCustomBrowser.m; sourceTree = "<group>"; };
-		27A04720170BDEF7F910AF3DD1F47324 /* OIDScopeUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopeUtilities.h; path = Source/AppAuthCore/OIDScopeUtilities.h; sourceTree = "<group>"; };
 		28B28FEA29C15C13B672534DD923AAEF /* Pods-SharonBaptistHamptonVA-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SharonBaptistHamptonVA-frameworks.sh"; sourceTree = "<group>"; };
-		31DCA93207662FDBEA36F91A7910F830 /* OIDServiceDiscovery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceDiscovery.m; path = Source/AppAuthCore/OIDServiceDiscovery.m; sourceTree = "<group>"; };
-		33102836B4B6E5A7D79C31ACD76BB17F /* OIDEndSessionResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDEndSessionResponse.m; path = Source/AppAuthCore/OIDEndSessionResponse.m; sourceTree = "<group>"; };
 		355646683548CD9A69DB9B07F095B3D0 /* youtube-ios-player-helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.release.xcconfig"; sourceTree = "<group>"; };
-		3AD6E71FD84C584A2EB4B93BF1B8A5EF /* OIDAuthorizationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationResponse.m; path = Source/AppAuthCore/OIDAuthorizationResponse.m; sourceTree = "<group>"; };
-		3D923CDB6600C87D78100DF751B12628 /* OIDAuthorizationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationRequest.m; path = Source/AppAuthCore/OIDAuthorizationRequest.m; sourceTree = "<group>"; };
 		43D98F5B64E8D695FF19F84C2EA6E9AC /* YTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = Classes/YTPlayerView.m; sourceTree = "<group>"; };
 		4861CB7FF1EFDD19208BA36F4066296B /* Pods-SharonBaptistHamptonVA-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SharonBaptistHamptonVA-Info.plist"; sourceTree = "<group>"; };
-		48DBC1182C8415D263FF3E4D6A690614 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		48DD45EFBF362E66A8EE6A6E8F1CD71E /* Pods_SharonBaptistHamptonVA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharonBaptistHamptonVA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AD89605FE78D90783E8E29DE5B34B14 /* OIDTokenUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenUtilities.m; path = Source/AppAuthCore/OIDTokenUtilities.m; sourceTree = "<group>"; };
-		4B14D7EFA6AF1A698CDD060D9651E18A /* OIDExternalUserAgent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgent.h; path = Source/AppAuthCore/OIDExternalUserAgent.h; sourceTree = "<group>"; };
-		4CB6125DC7B2BD832AEE0C961A661F60 /* OIDAuthorizationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationService.m; path = Source/AppAuthCore/OIDAuthorizationService.m; sourceTree = "<group>"; };
-		513DCBC16502B8AB8011C0BD14091781 /* AppAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppAuth-dummy.m"; sourceTree = "<group>"; };
-		52938218FCDA42E1EB0CA6BA6A062E1C /* OIDRegistrationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDRegistrationRequest.h; path = Source/AppAuthCore/OIDRegistrationRequest.h; sourceTree = "<group>"; };
-		52DA41A6889AAE3BF76A6D6A78F556D7 /* OIDScopes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopes.m; path = Source/AppAuthCore/OIDScopes.m; sourceTree = "<group>"; };
-		55B4CB8FDFB0B7778C4968F6DDEEE2B7 /* AppAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AppAuth.modulemap; sourceTree = "<group>"; };
 		5E40896AD24612597D534FB3004CAD3E /* Pods-SharonBaptistHamptonVA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SharonBaptistHamptonVA.debug.xcconfig"; sourceTree = "<group>"; };
-		5F41AF6FC5916B46085F2B29B0490A34 /* OIDURLQueryComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDURLQueryComponent.h; path = Source/AppAuthCore/OIDURLQueryComponent.h; sourceTree = "<group>"; };
-		5FB2602C524ECB8B6B3B9FE21F20E13F /* OIDResponseTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDResponseTypes.m; path = Source/AppAuthCore/OIDResponseTypes.m; sourceTree = "<group>"; };
-		635EFB8E3FA9346FDEE9FC863DECE82E /* OIDEndSessionRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDEndSessionRequest.m; path = Source/AppAuthCore/OIDEndSessionRequest.m; sourceTree = "<group>"; };
-		686540AA96FB5ACD6C27B59360B76E3F /* AppAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppAuth-umbrella.h"; sourceTree = "<group>"; };
-		6B4CA180347D888BAE3071520467A978 /* OIDAuthorizationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationService.h; path = Source/AppAuthCore/OIDAuthorizationService.h; sourceTree = "<group>"; };
-		6B85C717C487CF6956AE203ADF4E0E60 /* AppAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppAuth-prefix.pch"; sourceTree = "<group>"; };
-		6B9CB9921A3A64CB552A6ACA9A4A98D4 /* OIDServiceConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceConfiguration.m; path = Source/AppAuthCore/OIDServiceConfiguration.m; sourceTree = "<group>"; };
-		6B9F0D172970CA74C66A8CDA30907133 /* OIDURLSessionProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDURLSessionProvider.h; path = Source/AppAuthCore/OIDURLSessionProvider.h; sourceTree = "<group>"; };
-		6DFC2C13F5802E52DD4A88EAD71CB4F1 /* OIDError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDError.h; path = Source/AppAuthCore/OIDError.h; sourceTree = "<group>"; };
-		70FEDFEE5503121C001D69F47B87B4DE /* OIDExternalUserAgentIOSCustomBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentIOSCustomBrowser.h; path = Source/AppAuth/iOS/OIDExternalUserAgentIOSCustomBrowser.h; sourceTree = "<group>"; };
-		7483B9290FF0C626FF79AA985E0A8320 /* OIDIDToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDIDToken.h; path = Source/AppAuthCore/OIDIDToken.h; sourceTree = "<group>"; };
-		75619D16B52FF5261F3421C0D47938ED /* OIDAuthorizationService+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OIDAuthorizationService+IOS.h"; path = "Source/AppAuth/iOS/OIDAuthorizationService+IOS.h"; sourceTree = "<group>"; };
-		769D00C67098FA98620FEB107C03BDA8 /* OIDRegistrationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDRegistrationResponse.m; path = Source/AppAuthCore/OIDRegistrationResponse.m; sourceTree = "<group>"; };
-		782B2B09CA73D5414A66BDE95EBE4244 /* OIDAuthorizationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationRequest.h; path = Source/AppAuthCore/OIDAuthorizationRequest.h; sourceTree = "<group>"; };
-		7A027E4B587185282E2CA60C86591ADA /* OIDErrorUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDErrorUtilities.m; path = Source/AppAuthCore/OIDErrorUtilities.m; sourceTree = "<group>"; };
-		7B49DA4FF662306FB225C9D385936493 /* OIDAuthState+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OIDAuthState+IOS.h"; path = "Source/AppAuth/iOS/OIDAuthState+IOS.h"; sourceTree = "<group>"; };
 		7E7E1D4F3BE9F41FB2F8FC1FF904A426 /* youtube-ios-player-helper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "youtube-ios-player-helper-Info.plist"; sourceTree = "<group>"; };
-		81BE9A2CF0B4750EBF56969252278529 /* OIDExternalUserAgentIOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentIOS.m; path = Source/AppAuth/iOS/OIDExternalUserAgentIOS.m; sourceTree = "<group>"; };
 		8498A1B2C60117E181CA67921DDAE0B6 /* youtube_ios_player_helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = youtube_ios_player_helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		862BD162299A97C1D2876E987379798D /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/AppAuthCore/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
 		8867CCA41E3FA69CE251E06447A9DA5F /* Pods-SharonBaptistHamptonVA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SharonBaptistHamptonVA.release.xcconfig"; sourceTree = "<group>"; };
-		8929D1B3608E71620DB99D88EE552483 /* OIDGrantTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDGrantTypes.m; path = Source/AppAuthCore/OIDGrantTypes.m; sourceTree = "<group>"; };
-		8DB48015736E061D89AE163AAF6EE380 /* OIDTokenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenRequest.m; path = Source/AppAuthCore/OIDTokenRequest.m; sourceTree = "<group>"; };
 		8EDCAB3757608159AF6CC253D317816C /* Pods-SharonBaptistHamptonVA-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SharonBaptistHamptonVA-umbrella.h"; sourceTree = "<group>"; };
-		91A94CC6D6FFED8EF649F7CA4A41B258 /* AppAuth-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AppAuth-Info.plist"; sourceTree = "<group>"; };
-		9447AD2866D382E3AAF54068EF3AF3EC /* OIDEndSessionResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDEndSessionResponse.h; path = Source/AppAuthCore/OIDEndSessionResponse.h; sourceTree = "<group>"; };
-		94628D833A827DE0B52078DB9AD5E52D /* OIDIDToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDIDToken.m; path = Source/AppAuthCore/OIDIDToken.m; sourceTree = "<group>"; };
-		97FCFAB678482B77D2D6394888C63B7E /* OIDAuthStateErrorDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateErrorDelegate.h; path = Source/AppAuthCore/OIDAuthStateErrorDelegate.h; sourceTree = "<group>"; };
-		98E4E3340507885548E674965447F070 /* AppAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppAuth.h; path = Source/AppAuth.h; sourceTree = "<group>"; };
-		999CD1634DEB1B43533314168E68A930 /* OIDAuthState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthState.m; path = Source/AppAuthCore/OIDAuthState.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3E936C6182DE46A11F46D1023419F05 /* OIDDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDDefines.h; path = Source/AppAuthCore/OIDDefines.h; sourceTree = "<group>"; };
-		A58041E751EDF6625B45400D790D8889 /* OIDServiceConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceConfiguration.h; path = Source/AppAuthCore/OIDServiceConfiguration.h; sourceTree = "<group>"; };
-		A59E5576275742EE961ED3BFC8ADC02B /* OIDExternalUserAgentCatalyst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentCatalyst.m; path = Source/AppAuth/iOS/OIDExternalUserAgentCatalyst.m; sourceTree = "<group>"; };
-		A61D3DD14ED70D8AC5A9ABCA0759FF3B /* OIDScopeUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopeUtilities.m; path = Source/AppAuthCore/OIDScopeUtilities.m; sourceTree = "<group>"; };
-		A94C32395FD253E91A6582AC463A77B1 /* OIDError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDError.m; path = Source/AppAuthCore/OIDError.m; sourceTree = "<group>"; };
-		AA6FFE1E1B77D6F207B0840EBDA5AEBB /* OIDErrorUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDErrorUtilities.h; path = Source/AppAuthCore/OIDErrorUtilities.h; sourceTree = "<group>"; };
 		B46684168265DE675DF96A99A4F5DFCF /* youtube-ios-player-helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-umbrella.h"; sourceTree = "<group>"; };
-		B7533C07E3262F8717D6C44CB94C8F5A /* AppAuthCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppAuthCore.h; path = Source/AppAuthCore.h; sourceTree = "<group>"; };
-		B7925D1C21D5845185B063F80D9259A6 /* OIDTokenResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenResponse.m; path = Source/AppAuthCore/OIDTokenResponse.m; sourceTree = "<group>"; };
 		B7B115E519CCAADD026770D101C4CBD0 /* Assets.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Assets.bundle; path = "youtube-ios-player-helper/Assets.bundle"; sourceTree = "<group>"; };
-		BACF58772A6D6AC2E9E52E4D3043F78A /* OIDAuthorizationService+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OIDAuthorizationService+IOS.m"; path = "Source/AppAuth/iOS/OIDAuthorizationService+IOS.m"; sourceTree = "<group>"; };
-		C3135AF675E7E0E358A40D0B8FCA7952 /* OIDAuthState+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OIDAuthState+IOS.m"; path = "Source/AppAuth/iOS/OIDAuthState+IOS.m"; sourceTree = "<group>"; };
 		D09BF49FC66B6ECD7230D75FDFB2BF8E /* youtube-ios-player-helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "youtube-ios-player-helper.modulemap"; sourceTree = "<group>"; };
-		D35F0A940286D09308DEEB3FCE94BF9A /* OIDAuthState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthState.h; path = Source/AppAuthCore/OIDAuthState.h; sourceTree = "<group>"; };
 		D362E714DEAD723320A584166112E4B0 /* youtube-ios-player-helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-prefix.pch"; sourceTree = "<group>"; };
-		D4C62DD8A60094C56A209C8BC93CF806 /* OIDExternalUserAgentCatalyst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentCatalyst.h; path = Source/AppAuth/iOS/OIDExternalUserAgentCatalyst.h; sourceTree = "<group>"; };
-		D73EC4F36498D850D7E7A61FF69C6A79 /* AppAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppAuth.debug.xcconfig; sourceTree = "<group>"; };
-		D8BA207B4D7B547A810B6047F6758492 /* OIDClientMetadataParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDClientMetadataParameters.h; path = Source/AppAuthCore/OIDClientMetadataParameters.h; sourceTree = "<group>"; };
-		DA26F621F0220CC604FA10E44CD0A2A8 /* OIDResponseTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDResponseTypes.h; path = Source/AppAuthCore/OIDResponseTypes.h; sourceTree = "<group>"; };
-		DC70D12F61C28D2CA503050F608D6DC0 /* OIDTokenUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenUtilities.h; path = Source/AppAuthCore/OIDTokenUtilities.h; sourceTree = "<group>"; };
-		DCD8860775694939AB43256960663D03 /* OIDExternalUserAgentIOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentIOS.h; path = Source/AppAuth/iOS/OIDExternalUserAgentIOS.h; sourceTree = "<group>"; };
 		DF2DD1A73CB830AB44AC3788D0B8A97E /* Pods-SharonBaptistHamptonVA.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SharonBaptistHamptonVA.modulemap"; sourceTree = "<group>"; };
-		E07FDD1313618F7D31FB0463D865CB7A /* OIDServiceDiscovery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceDiscovery.h; path = Source/AppAuthCore/OIDServiceDiscovery.h; sourceTree = "<group>"; };
 		E9C87466E2EED3983ABB87C599AA45E1 /* Pods-SharonBaptistHamptonVA-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SharonBaptistHamptonVA-dummy.m"; sourceTree = "<group>"; };
-		F8F49DADCFEA04A0213EE8B65DDD0F43 /* OIDExternalUserAgentRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentRequest.h; path = Source/AppAuthCore/OIDExternalUserAgentRequest.h; sourceTree = "<group>"; };
-		FF78A6FFBBFFDA9EF3BFBD5EE6ECCE61 /* OIDAuthorizationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationResponse.h; path = Source/AppAuthCore/OIDAuthorizationResponse.h; sourceTree = "<group>"; };
-		FFAD14115AC1C2EB972EC06C338D9B2B /* OIDTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenRequest.h; path = Source/AppAuthCore/OIDTokenRequest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E43E8D7BF0396E9899702B7867D5C6A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,58 +63,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF54FBC044CC3EFEC4309420EE774826 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A4DC98E24FD245DA7505C9B33D5BE3D1 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		16FB2D44C62D18D6B026C2C441D16040 /* ExternalUserAgent */ = {
-			isa = PBXGroup;
-			children = (
-				98E4E3340507885548E674965447F070 /* AppAuth.h */,
-				75619D16B52FF5261F3421C0D47938ED /* OIDAuthorizationService+IOS.h */,
-				BACF58772A6D6AC2E9E52E4D3043F78A /* OIDAuthorizationService+IOS.m */,
-				7B49DA4FF662306FB225C9D385936493 /* OIDAuthState+IOS.h */,
-				C3135AF675E7E0E358A40D0B8FCA7952 /* OIDAuthState+IOS.m */,
-				D4C62DD8A60094C56A209C8BC93CF806 /* OIDExternalUserAgentCatalyst.h */,
-				A59E5576275742EE961ED3BFC8ADC02B /* OIDExternalUserAgentCatalyst.m */,
-				DCD8860775694939AB43256960663D03 /* OIDExternalUserAgentIOS.h */,
-				81BE9A2CF0B4750EBF56969252278529 /* OIDExternalUserAgentIOS.m */,
-				70FEDFEE5503121C001D69F47B87B4DE /* OIDExternalUserAgentIOSCustomBrowser.h */,
-				259D49999C20A59949C00C9D7FF61930 /* OIDExternalUserAgentIOSCustomBrowser.m */,
-			);
-			name = ExternalUserAgent;
-			sourceTree = "<group>";
-		};
-		2B1EBC5F90D081A9A98FD4D9ACE80DAA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				55B4CB8FDFB0B7778C4968F6DDEEE2B7 /* AppAuth.modulemap */,
-				513DCBC16502B8AB8011C0BD14091781 /* AppAuth-dummy.m */,
-				91A94CC6D6FFED8EF649F7CA4A41B258 /* AppAuth-Info.plist */,
-				6B85C717C487CF6956AE203ADF4E0E60 /* AppAuth-prefix.pch */,
-				686540AA96FB5ACD6C27B59360B76E3F /* AppAuth-umbrella.h */,
-				D73EC4F36498D850D7E7A61FF69C6A79 /* AppAuth.debug.xcconfig */,
-				0BB98A7DFA8A85CFF0032C1062DC656D /* AppAuth.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AppAuth";
-			sourceTree = "<group>";
-		};
 		3F63897AD8A0871A1DC049A7E8A4677E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				82993B987673EDDF956944BD41E5F715 /* AppAuth */,
 				90C7F0F30BC8174AD3AA89CF57BE82ED /* youtube-ios-player-helper */,
 			);
 			name = Pods;
@@ -206,16 +85,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		82993B987673EDDF956944BD41E5F715 /* AppAuth */ = {
-			isa = PBXGroup;
-			children = (
-				920A9483E7317469C43D47A77F9447BD /* Core */,
-				16FB2D44C62D18D6B026C2C441D16040 /* ExternalUserAgent */,
-				2B1EBC5F90D081A9A98FD4D9ACE80DAA /* Support Files */,
-			);
-			path = AppAuth;
-			sourceTree = "<group>";
-		};
 		90C7F0F30BC8174AD3AA89CF57BE82ED /* youtube-ios-player-helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,68 +96,6 @@
 			path = "youtube-ios-player-helper";
 			sourceTree = "<group>";
 		};
-		920A9483E7317469C43D47A77F9447BD /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				B7533C07E3262F8717D6C44CB94C8F5A /* AppAuthCore.h */,
-				782B2B09CA73D5414A66BDE95EBE4244 /* OIDAuthorizationRequest.h */,
-				3D923CDB6600C87D78100DF751B12628 /* OIDAuthorizationRequest.m */,
-				FF78A6FFBBFFDA9EF3BFBD5EE6ECCE61 /* OIDAuthorizationResponse.h */,
-				3AD6E71FD84C584A2EB4B93BF1B8A5EF /* OIDAuthorizationResponse.m */,
-				6B4CA180347D888BAE3071520467A978 /* OIDAuthorizationService.h */,
-				4CB6125DC7B2BD832AEE0C961A661F60 /* OIDAuthorizationService.m */,
-				D35F0A940286D09308DEEB3FCE94BF9A /* OIDAuthState.h */,
-				999CD1634DEB1B43533314168E68A930 /* OIDAuthState.m */,
-				862BD162299A97C1D2876E987379798D /* OIDAuthStateChangeDelegate.h */,
-				97FCFAB678482B77D2D6394888C63B7E /* OIDAuthStateErrorDelegate.h */,
-				D8BA207B4D7B547A810B6047F6758492 /* OIDClientMetadataParameters.h */,
-				0E96857D44724A0B98F3CEABBB12053F /* OIDClientMetadataParameters.m */,
-				A3E936C6182DE46A11F46D1023419F05 /* OIDDefines.h */,
-				004F485E099233838C495CD5E6E91DFF /* OIDEndSessionRequest.h */,
-				635EFB8E3FA9346FDEE9FC863DECE82E /* OIDEndSessionRequest.m */,
-				9447AD2866D382E3AAF54068EF3AF3EC /* OIDEndSessionResponse.h */,
-				33102836B4B6E5A7D79C31ACD76BB17F /* OIDEndSessionResponse.m */,
-				6DFC2C13F5802E52DD4A88EAD71CB4F1 /* OIDError.h */,
-				A94C32395FD253E91A6582AC463A77B1 /* OIDError.m */,
-				AA6FFE1E1B77D6F207B0840EBDA5AEBB /* OIDErrorUtilities.h */,
-				7A027E4B587185282E2CA60C86591ADA /* OIDErrorUtilities.m */,
-				4B14D7EFA6AF1A698CDD060D9651E18A /* OIDExternalUserAgent.h */,
-				F8F49DADCFEA04A0213EE8B65DDD0F43 /* OIDExternalUserAgentRequest.h */,
-				1362AFE9B67C4A087BC45E62E8BBB4F9 /* OIDExternalUserAgentSession.h */,
-				0F0ECBFDBC9DF7ACC3E04A9132BE9AD3 /* OIDFieldMapping.h */,
-				1AA6C018CC1DF52FD8CB073CBB6BBA09 /* OIDFieldMapping.m */,
-				080B00727B741CC1DE93FBC8DCE10D76 /* OIDGrantTypes.h */,
-				8929D1B3608E71620DB99D88EE552483 /* OIDGrantTypes.m */,
-				7483B9290FF0C626FF79AA985E0A8320 /* OIDIDToken.h */,
-				94628D833A827DE0B52078DB9AD5E52D /* OIDIDToken.m */,
-				52938218FCDA42E1EB0CA6BA6A062E1C /* OIDRegistrationRequest.h */,
-				0C5AA31FD0C7A718739B074D9666AC51 /* OIDRegistrationRequest.m */,
-				06918337B519DACEB79F0F33A1784314 /* OIDRegistrationResponse.h */,
-				769D00C67098FA98620FEB107C03BDA8 /* OIDRegistrationResponse.m */,
-				DA26F621F0220CC604FA10E44CD0A2A8 /* OIDResponseTypes.h */,
-				5FB2602C524ECB8B6B3B9FE21F20E13F /* OIDResponseTypes.m */,
-				1AAF1DA216C2D50B7DC0B4A02FC08469 /* OIDScopes.h */,
-				52DA41A6889AAE3BF76A6D6A78F556D7 /* OIDScopes.m */,
-				27A04720170BDEF7F910AF3DD1F47324 /* OIDScopeUtilities.h */,
-				A61D3DD14ED70D8AC5A9ABCA0759FF3B /* OIDScopeUtilities.m */,
-				A58041E751EDF6625B45400D790D8889 /* OIDServiceConfiguration.h */,
-				6B9CB9921A3A64CB552A6ACA9A4A98D4 /* OIDServiceConfiguration.m */,
-				E07FDD1313618F7D31FB0463D865CB7A /* OIDServiceDiscovery.h */,
-				31DCA93207662FDBEA36F91A7910F830 /* OIDServiceDiscovery.m */,
-				FFAD14115AC1C2EB972EC06C338D9B2B /* OIDTokenRequest.h */,
-				8DB48015736E061D89AE163AAF6EE380 /* OIDTokenRequest.m */,
-				1450F13B5C305F1B77E75114D6666151 /* OIDTokenResponse.h */,
-				B7925D1C21D5845185B063F80D9259A6 /* OIDTokenResponse.m */,
-				DC70D12F61C28D2CA503050F608D6DC0 /* OIDTokenUtilities.h */,
-				4AD89605FE78D90783E8E29DE5B34B14 /* OIDTokenUtilities.m */,
-				5F41AF6FC5916B46085F2B29B0490A34 /* OIDURLQueryComponent.h */,
-				0572E131966024051896FDFFF103C880 /* OIDURLQueryComponent.m */,
-				6B9F0D172970CA74C66A8CDA30907133 /* OIDURLSessionProvider.h */,
-				08695FB346A637B7457900D780C3689E /* OIDURLSessionProvider.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
 		99428CB03782797C87ACB02DB2E338EA /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,15 +103,6 @@
 				8498A1B2C60117E181CA67921DDAE0B6 /* youtube_ios_player_helper.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A4DC98E24FD245DA7505C9B33D5BE3D1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				48DBC1182C8415D263FF3E4D6A690614 /* Foundation.framework */,
-				1D7F52E9440D6BFF0B1159CE55091460 /* SafariServices.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		A5AC00A7525FB0093E0732F91F0E898D /* Targets Support Files */ = {
@@ -351,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				3F63897AD8A0871A1DC049A7E8A4677E /* Pods */,
 				99428CB03782797C87ACB02DB2E338EA /* Products */,
 				A5AC00A7525FB0093E0732F91F0E898D /* Targets Support Files */,
@@ -425,7 +222,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 11.0";
@@ -547,7 +344,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -710,7 +507,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

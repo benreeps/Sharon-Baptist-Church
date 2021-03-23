@@ -13,7 +13,7 @@ struct Response: Decodable {
     
     enum CodingKeys: String, CodingKey {
         
-        case items
+        case items 
     }
     
     init(from decoder: Decoder) throws {
@@ -22,5 +22,6 @@ struct Response: Decodable {
         
         self.items = try container.decode([Video].self, forKey: .items)
         
+
     }
 }

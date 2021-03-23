@@ -6,14 +6,15 @@
 //
 
 import Foundation
+import UIKit
 
-protocol PlaylistControllerDelegate {
+protocol PlaylistModelDelegate {
     func videosFetched(_ videos: [Video])
 }
 
-class PlaylistController {
+class PlaylistModel {
     
-    var delegate: PlaylistControllerDelegate?
+    var delegate: PlaylistModelDelegate?
     
     func getVideos() {
         
@@ -40,7 +41,7 @@ class PlaylistController {
                 
                 // Specify the type of data you want to decode the data into
                 let response = try decoder.decode(Response.self, from: data!)
-                
+                print("\(response)")
                 if response.items != nil {
                     
                     DispatchQueue.main.async {
@@ -50,7 +51,7 @@ class PlaylistController {
                 dump(response)
             }
             catch {
-                
+                print("decoding error")
                 
             }
         }

@@ -43,23 +43,16 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="pmI-DY-R0u" firstAttribute="leading" secondItem="WSW-Ym-d70" secondAttribute="leading" id="Fxu-8e-fK7"/>
-                                    <constraint firstItem="cBq-UR-Okg" firstAttribute="leading" secondItem="WSW-Ym-d70" secondAttribute="leading" id="SmH-cu-zzK"/>
                                     <constraint firstAttribute="trailing" secondItem="pmI-DY-R0u" secondAttribute="trailing" id="t1x-ZJ-kM4"/>
-                                    <constraint firstAttribute="bottom" secondItem="cBq-UR-Okg" secondAttribute="bottom" id="wRq-OZ-8pp"/>
                                     <constraint firstAttribute="trailing" secondItem="cBq-UR-Okg" secondAttribute="trailing" id="y9b-y6-s1n"/>
-                                    <constraint firstItem="pmI-DY-R0u" firstAttribute="top" secondItem="WSW-Ym-d70" secondAttribute="top" id="yMN-zg-dKz"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YUD-H4-cM5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="WSW-Ym-d70" firstAttribute="leading" secondItem="YUD-H4-cM5" secondAttribute="leading" constant="57" id="3VP-aG-5L1"/>
                             <constraint firstItem="YUD-H4-cM5" firstAttribute="trailing" secondItem="WSW-Ym-d70" secondAttribute="trailing" constant="57" id="CRi-G0-B1O"/>
-                            <constraint firstItem="WSW-Ym-d70" firstAttribute="top" secondItem="YUD-H4-cM5" secondAttribute="top" constant="68" id="KdF-ci-7pb"/>
                             <constraint firstItem="WSW-Ym-d70" firstAttribute="centerY" secondItem="fDK-Xe-RWj" secondAttribute="centerY" id="L0n-xE-Izd"/>
-                            <constraint firstItem="YUD-H4-cM5" firstAttribute="bottom" secondItem="WSW-Ym-d70" secondAttribute="bottom" constant="125" id="iy5-4m-YKu"/>
                             <constraint firstItem="WSW-Ym-d70" firstAttribute="centerX" secondItem="fDK-Xe-RWj" secondAttribute="centerX" id="oMD-Ef-KUu"/>
                         </constraints>
                     </view>
@@ -149,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jc7-Sh-d6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5723.188405797102" y="-245.08928571428569"/>
+            <point key="canvasLocation" x="5655" y="-245"/>
         </scene>
         <!--DetailViewController-->
         <scene sceneID="uTo-B2-AQV">

@@ -4,25 +4,28 @@
 //
 //  Created by Benjamin Reeps on 3/5/21.
 //
-
 import Foundation
 
 struct LiveVideo: Decodable {
     
     var videoId = ""
     var title = ""
+    var description = ""
+    var thumbnail = ""
     var published = Date()
-    var lifeCycleStatus = ""
     
     enum CodingKeys: String, CodingKey {
         
         case snippet
-        case status
-        case videoId = "id"
+        case thumbnails
+        case high
+        case resourceId
         
         case published = "publishedAt"
         case title
-        case lifeCycleStatus
+        case description
+        case thumbnail = "url"
+        case videoId
         
     }
     
@@ -32,13 +35,17 @@ struct LiveVideo: Decodable {
         let snippetContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .snippet)
         
         self.title = try snippetContainer.decode(String.self, forKey: .title)
+        self.description = try snippetContainer.decode(String.self, forKey: .description)
         self.published = try snippetContainer.decode(Date.self, forKey: .published)
         
-        let statusContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .status)
+        let thumbnailContainer = try snippetContainer.nestedContainer(keyedBy: CodingKeys.self, forKey: .thumbnails)
+        let highContainer = try thumbnailContainer.nestedContainer(keyedBy: CodingKeys.self, forKey: .high)
         
-        self.lifeCycleStatus = try statusContainer.decode(String.self, forKey: .lifeCycleStatus)
+        self.thumbnail = try highContainer.decode(String.self, forKey: .thumbnail)
         
-        self.videoId = try container.decode(String.self, forKey: .videoId)
+        let resourceIdContainer = try snippetContainer.nestedContainer(keyedBy: CodingKeys.self, forKey: .resourceId)
+        
+        self.videoId = try resourceIdContainer.decode(String.self, forKey: .videoId)
         
     }
     

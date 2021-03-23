@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import OAuth2
 
 protocol LiveVideoControllerDelegate {
     func liveVideosFetched(_ liveVideos: [LiveVideo])
@@ -42,7 +41,7 @@ class LiveVideoController {
                 // Specify the type of data you want to decode the data into
                 
                 let liveResponse = try decoder.decode(LiveResponse.self, from: data!)
-        //BP
+        
                 if liveResponse.items != nil {
                     
                     DispatchQueue.main.async {
@@ -62,4 +61,3 @@ class LiveVideoController {
     }
     
 }
-
