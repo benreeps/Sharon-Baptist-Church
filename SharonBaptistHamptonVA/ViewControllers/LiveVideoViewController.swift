@@ -5,25 +5,25 @@
 //  Created by Benjamin Reeps on 3/4/21.
 //
 
+import Foundation
 import UIKit
-import youtube_ios_player_helper
 
-class LiveVideoViewController: UIViewController, LiveVideoControllerDelegate {
+class LiveVideoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, LiveVideoModelDelegate {
     
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var liveVideoPlayerView: YTPlayerView!
+    @IBOutlet weak var tableView: UITableView!
     
-    
-    let liveVideoController = LiveVideoController()
+    let liveVideoModel = LiveVideoModel()
     var liveVideos = [LiveVideo]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        liveVideoController.delegate = self
+        // Set itself as the data source and the delegate
+        tableView.dataSource = self
+        tableView.delegate = self
         
-     //   liveVideoController.getLiveVideos()
+        liveVideoModel.delegate = self
+        liveVideoModel.getLiveVideos()
         
     }
     
@@ -34,35 +34,44 @@ class LiveVideoViewController: UIViewController, LiveVideoControllerDelegate {
             
             self.liveVideos = liveVideos
             
+            self.tableView.reloadData()
+            
         }
     }
-    /*
-    override func viewWillAppear(_ animated: Bool) {
-        
-        // Clear the field
-        titleLabel.text = ""
-        dateLabel.text = ""
-        
-        // Check if there is a video
-        guard liveVideos != nil else {return}
 
-        
-        // Set the title
-        titleLabel.text = liveVideo!.title
-        
-        // Set the date
-        updateVideoDateFormat(date: liveVideo!.published)
-        
-        // Set the video
-        if liveVideo!.lifeCycleStatus == "upcoming" {
-            print(liveVideo!.videoId)
-            self.liveVideoPlayerView.load(withVideoId: liveVideo!.videoId)
-            
-        } else {return}
+    //MARK:- TableView methods
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        liveVideos.count
     }
-    */
-    func updateVideoDateFormat(date: Date) {
-        self.dateLabel.text = DateManager.videoDateFormatter.string(from: date)
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.LIVEVIDEOCELL_ID, for: indexPath) as! LiveVideoTableViewCell
+        
+        let liveVideo = self.liveVideos[indexPath.row]
+        cell.setCell(liveVideo)
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Confirm that a video was selected
+        guard tableView.indexPathForSelectedRow != nil else {return}
+        
+        // Get a reference to the video that was tapped on
+        let selectedVideo = liveVideos[tableView.indexPathForSelectedRow!.row]
+        
+        // Get a reference to the detail view controller
+        let liveDetailVC = segue.destination as! LiveDetailViewController
+        
+        // Set the video property of the detail view controller
+        liveDetailVC.liveVideo = selectedVideo
     }
 }
 

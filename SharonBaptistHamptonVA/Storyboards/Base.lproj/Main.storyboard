@@ -3,12 +3,13 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Media-->
+        <!--Watch-->
         <scene sceneID="mj9-tw-6pO">
             <objects>
                 <viewController id="lqy-7t-bfM" customClass="MediaOptionsViewController" customModule="SharonBaptistHamptonVA" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,47 +17,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="WSW-Ym-d70">
-                                <rect key="frame" x="57" y="208" width="300" height="480"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g5P-N9-Wko">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.90604072810000003" green="0.89071685079999996" blue="0.85524243119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="WSW-Ym-d70">
+                                <rect key="frame" x="25" y="278" width="364" height="460"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmI-DY-R0u">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmI-DY-R0u" customClass="CustomButton" customModule="SharonBaptistHamptonVA" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="200"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="ac5-Xf-UGZ"/>
                                         </constraints>
-                                        <state key="normal" title="All Services"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="35"/>
+                                        <state key="normal" title="  All Sermons" backgroundImage="AllSermons1">
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
+                                            <action selector="allSermonsButtonPressed:" destination="lqy-7t-bfM" eventType="touchUpInside" id="0PD-O9-4zL"/>
                                             <segue destination="1lz-9E-32V" kind="show" id="HxL-Xd-dbU"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBq-UR-Okg">
-                                        <rect key="frame" x="0.0" y="280" width="300" height="200"/>
-                                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.26219661560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <button opaque="NO" clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBq-UR-Okg" customClass="CustomButton" customModule="SharonBaptistHamptonVA" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="260" width="364" height="200"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="Xx9-QQ-XAw"/>
                                         </constraints>
-                                        <state key="normal" title="Live Service"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="36"/>
+                                        <state key="normal" title="Live Sermon" backgroundImage="LiveSermon">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
+                                            <action selector="liveSermonButtonPressed:" destination="lqy-7t-bfM" eventType="touchUpInside" id="pA4-Q0-E7F"/>
                                             <segue destination="gH0-Ey-gt3" kind="presentation" id="Uhf-H0-nMp"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="pmI-DY-R0u" secondAttribute="trailing" id="t1x-ZJ-kM4"/>
-                                    <constraint firstAttribute="trailing" secondItem="cBq-UR-Okg" secondAttribute="trailing" id="y9b-y6-s1n"/>
+                                    <constraint firstAttribute="trailing" secondItem="cBq-UR-Okg" secondAttribute="trailing" id="DQD-Vj-Gjg"/>
+                                    <constraint firstAttribute="trailing" secondItem="pmI-DY-R0u" secondAttribute="trailing" id="RkG-IA-c8Y"/>
+                                    <constraint firstItem="pmI-DY-R0u" firstAttribute="leading" secondItem="WSW-Ym-d70" secondAttribute="leading" id="fbz-dB-0jy"/>
+                                    <constraint firstItem="cBq-UR-Okg" firstAttribute="leading" secondItem="WSW-Ym-d70" secondAttribute="leading" id="jJh-d6-XDM"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YUD-H4-cM5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YUD-H4-cM5" firstAttribute="trailing" secondItem="WSW-Ym-d70" secondAttribute="trailing" constant="57" id="CRi-G0-B1O"/>
-                            <constraint firstItem="WSW-Ym-d70" firstAttribute="centerY" secondItem="fDK-Xe-RWj" secondAttribute="centerY" id="L0n-xE-Izd"/>
-                            <constraint firstItem="WSW-Ym-d70" firstAttribute="centerX" secondItem="fDK-Xe-RWj" secondAttribute="centerX" id="oMD-Ef-KUu"/>
+                            <constraint firstItem="g5P-N9-Wko" firstAttribute="leading" secondItem="YUD-H4-cM5" secondAttribute="leading" id="5EP-jw-0ar"/>
+                            <constraint firstItem="YUD-H4-cM5" firstAttribute="trailing" secondItem="g5P-N9-Wko" secondAttribute="trailing" id="AUU-h3-UMn"/>
+                            <constraint firstItem="YUD-H4-cM5" firstAttribute="trailing" secondItem="WSW-Ym-d70" secondAttribute="trailing" constant="25" id="CRi-G0-B1O"/>
+                            <constraint firstItem="YUD-H4-cM5" firstAttribute="bottom" secondItem="WSW-Ym-d70" secondAttribute="bottom" constant="75" id="NpR-yL-1uz"/>
+                            <constraint firstAttribute="bottom" secondItem="g5P-N9-Wko" secondAttribute="bottom" id="RoZ-6D-2z0"/>
+                            <constraint firstItem="WSW-Ym-d70" firstAttribute="leading" secondItem="YUD-H4-cM5" secondAttribute="leading" constant="25" id="ggq-eq-dkg"/>
+                            <constraint firstItem="g5P-N9-Wko" firstAttribute="top" secondItem="fDK-Xe-RWj" secondAttribute="top" id="lNE-1e-yFe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Media" id="Q2W-6f-kTC"/>
+                    <navigationItem key="navigationItem" title="Watch" largeTitleDisplayMode="never" id="Q2W-6f-kTC"/>
                     <connections>
                         <outlet property="allSermonsButton" destination="pmI-DY-R0u" id="DQL-Ra-cfJ"/>
                         <outlet property="liveSermonButton" destination="cBq-UR-Okg" id="voK-kg-lUk"/>
@@ -66,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="3849.275362318841" y="41.517857142857139"/>
         </scene>
-        <!--All Services-->
+        <!--All Sermons-->
         <scene sceneID="9LV-af-p39">
             <objects>
                 <viewController id="cxp-cL-Wjc" customClass="PlaylistViewController" customModule="SharonBaptistHamptonVA" customModuleProvider="target" sceneMemberID="viewController">
@@ -135,7 +156,7 @@
                             <constraint firstItem="SxH-zq-eFD" firstAttribute="top" secondItem="Sgd-eP-vxK" secondAttribute="top" id="pii-gf-sIS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="All Services" id="jIw-iz-vEC"/>
+                    <navigationItem key="navigationItem" title="All Sermons" id="jIw-iz-vEC"/>
                     <connections>
                         <outlet property="tableView" destination="SxH-zq-eFD" id="x6L-VC-Cxv"/>
                     </connections>
@@ -229,15 +250,21 @@
             </objects>
             <point key="canvasLocation" x="4813.04347826087" y="-245.08928571428569"/>
         </scene>
-        <!--Media-->
+        <!--Watch-->
         <scene sceneID="WrD-na-R8s">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MIX-9k-K2t" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Media" id="xeR-y1-QPu"/>
+                    <tabBarItem key="tabBarItem" title="Watch" id="xeR-y1-QPu">
+                        <imageReference key="image" image="play.rectangle" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="2D5-Ac-wDL">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.61040407419999998" green="0.56547063590000002" blue="0.52207559349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -257,20 +284,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemBlueColor"/>
+                        <color key="barTintColor" red="0.61040407419999998" green="0.56547063590000002" blue="0.52207559349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.81938964130000003" green="0.63202899690000003" blue="0.48566138739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
-                        <segue destination="MIX-9k-K2t" kind="relationship" relationship="viewControllers" id="seY-l8-g4w"/>
                         <segue destination="Z1d-YR-Djn" kind="relationship" relationship="viewControllers" id="xa1-qe-SCj"/>
+                        <segue destination="MIX-9k-K2t" kind="relationship" relationship="viewControllers" id="seY-l8-g4w"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ikb-8Y-Pns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1735" y="-541"/>
         </scene>
-        <!--Live Service -->
+        <!--Live Detail View Controller-->
         <scene sceneID="T7v-Tv-uEr">
             <objects>
-                <viewController id="vvy-GN-kht" customClass="LiveVideoViewController" customModule="SharonBaptistHamptonVA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vvy-GN-kht" customClass="LiveDetailViewController" customModule="SharonBaptistHamptonVA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dPo-C2-W1K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -314,32 +351,54 @@
                             <constraint firstItem="085-xf-uao" firstAttribute="trailing" secondItem="dPo-C2-W1K" secondAttribute="trailingMargin" id="uxF-dr-GRl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Live Service " id="LCF-GP-j2F"/>
+                    <navigationItem key="navigationItem" id="LCF-GP-j2F"/>
                     <connections>
-                        <outlet property="dateLabel" destination="N50-kR-jZ3" id="5Xy-xg-H77"/>
-                        <outlet property="liveVideoPlayerView" destination="SJ4-Ms-V4d" id="DXs-Pt-2s0"/>
-                        <outlet property="titleLabel" destination="yCN-S6-eku" id="x7S-t4-mAq"/>
+                        <outlet property="dateLabel" destination="N50-kR-jZ3" id="SpN-xi-75x"/>
+                        <outlet property="liveVideoPlayerView" destination="SJ4-Ms-V4d" id="rQD-Zx-r0Y"/>
+                        <outlet property="titleLabel" destination="yCN-S6-eku" id="mRf-9D-27u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQt-ui-rrf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5723" y="437"/>
+            <point key="canvasLocation" x="6468" y="437"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="3ce-Oo-iTb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z1d-YR-Djn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="VKg-SL-BD0"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="cross" id="VKg-SL-BD0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RYh-v5-DDf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.61040407419999998" green="0.56547063590000002" blue="0.52207559349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="O95-2L-elq" kind="relationship" relationship="rootViewController" id="Mah-K5-RlL"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J68-rk-VQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3185.507246376812" y="-1098.2142857142856"/>
+            <point key="canvasLocation" x="2939" y="-1237"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="lYX-px-QMx">
+            <objects>
+                <viewController id="O95-2L-elq" customClass="HomeViewController" customModule="SharonBaptistHamptonVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ol1-Sr-la1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jeK-A1-8pi"/>
+                        <color key="backgroundColor" red="0.90604072810000003" green="0.89071685079999996" blue="0.85524243119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p7s-b2-K13">
+                        <nil key="title"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8f-n0-TFv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3769.5652173913045" y="-1238.1696428571429"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gGB-50-9i9">
@@ -352,20 +411,105 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vvy-GN-kht" kind="relationship" relationship="rootViewController" id="C4e-JR-U7E"/>
+                        <segue destination="gqY-Og-Uzw" kind="relationship" relationship="rootViewController" id="z8k-Q0-dfJ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7l-5B-hgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4813" y="437"/>
         </scene>
+        <!--Live Sermons-->
+        <scene sceneID="3n4-sm-d75">
+            <objects>
+                <viewController id="gqY-Og-Uzw" customClass="LiveVideoViewController" customModule="SharonBaptistHamptonVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fp5-rz-QtT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SbQ-E5-NFV">
+                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LiveVideoCell" id="2A0-td-66w" customClass="LiveVideoTableViewCell" customModule="SharonBaptistHamptonVA" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="312"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2A0-td-66w" id="HWE-0b-CO9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="312"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xpu-Dv-7pb">
+                                                    <rect key="frame" x="20" y="20" width="374" height="272"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Eaa-uq-Dvt">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="210.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="Eaa-uq-Dvt" secondAttribute="height" multiplier="1280:720" id="ehB-sW-Ysw"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKv-gU-8Aw">
+                                                            <rect key="frame" x="0.0" y="220.5" width="374" height="21"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1r-ZL-Owz">
+                                                            <rect key="frame" x="0.0" y="251.5" width="374" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xpu-Dv-7pb" firstAttribute="top" secondItem="HWE-0b-CO9" secondAttribute="top" constant="20" id="4BM-Mf-Qgq"/>
+                                                <constraint firstAttribute="bottom" secondItem="xpu-Dv-7pb" secondAttribute="bottom" constant="20" id="Iqq-b4-86g"/>
+                                                <constraint firstAttribute="trailing" secondItem="xpu-Dv-7pb" secondAttribute="trailing" constant="20" id="ZFn-eC-8oG"/>
+                                                <constraint firstItem="xpu-Dv-7pb" firstAttribute="leading" secondItem="HWE-0b-CO9" secondAttribute="leading" constant="20" id="elc-MI-Q6H"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="X1r-ZL-Owz" id="mS4-07-xM6"/>
+                                            <outlet property="thumbnailImageView" destination="Eaa-uq-Dvt" id="0t0-aA-lyI"/>
+                                            <outlet property="titleLabel" destination="gKv-gU-8Aw" id="ZFc-oL-xDA"/>
+                                            <segue destination="vvy-GN-kht" kind="show" id="FD2-9Z-Jo7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3g2-1L-6ZJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3g2-1L-6ZJ" firstAttribute="bottom" secondItem="SbQ-E5-NFV" secondAttribute="bottom" id="39s-mZ-teI"/>
+                            <constraint firstItem="SbQ-E5-NFV" firstAttribute="top" secondItem="3g2-1L-6ZJ" secondAttribute="top" id="ShP-a7-W3m"/>
+                            <constraint firstItem="3g2-1L-6ZJ" firstAttribute="trailing" secondItem="SbQ-E5-NFV" secondAttribute="trailing" id="Zy4-OA-BLJ"/>
+                            <constraint firstItem="SbQ-E5-NFV" firstAttribute="leading" secondItem="3g2-1L-6ZJ" secondAttribute="leading" id="n0o-ZN-jzi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Live Sermons" id="wDS-zl-0kV"/>
+                    <connections>
+                        <outlet property="tableView" destination="SbQ-E5-NFV" id="bjN-Xx-gPA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ksD-dZ-9lR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5654" y="437"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="AllSermons1" width="3987" height="2531"/>
+        <image name="LiveSermon" width="5184" height="3456"/>
+        <image name="cross" width="30" height="30"/>
+        <image name="play.rectangle" catalog="system" width="128" height="93"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

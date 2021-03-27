@@ -13,6 +13,9 @@
 		260B6DFA25F2CC19000FFFFF /* LiveVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6DF925F2CC19000FFFFF /* LiveVideoModel.swift */; };
 		260B6E0725F807EC000FFFFF /* LiveResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6E0625F807EC000FFFFF /* LiveResponse.swift */; };
 		2640BD7925E04E2A00E70A1F /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640BD7825E04E2A00E70A1F /* VideoTableViewCell.swift */; };
+		2665A701260D4D98002BD7BF /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665A700260D4D98002BD7BF /* UIButtonExtensions.swift */; };
+		2665A707260E89D6002BD7BF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665A706260E89D6002BD7BF /* CustomButton.swift */; };
+		2665A70C260EA6FD002BD7BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665A70B260EA6FD002BD7BF /* HomeViewController.swift */; };
 		2676B82D25E1A0A3003A911B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676B82C25E1A0A3003A911B /* CacheManager.swift */; };
 		2676B83125E5BF5A003A911B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676B83025E5BF5A003A911B /* DetailViewController.swift */; };
 		2676B83425E5D26B003A911B /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676B83325E5D26B003A911B /* DateManager.swift */; };
@@ -28,6 +31,8 @@
 		267C240525DC960E003FACFB /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240425DC960E003FACFB /* Response.swift */; };
 		267C240825DDA2D3003FACFB /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240725DDA2D3003FACFB /* ConstantsTemplate.swift */; };
 		267C240C25DDD8AA003FACFB /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240B25DDD8AA003FACFB /* PlaylistViewController.swift */; };
+		26C68DEB260A6BC3007C5875 /* LiveVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C68DEA260A6BC3007C5875 /* LiveVideoTableViewCell.swift */; };
+		26C68DEE260A714C007C5875 /* LiveDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C68DED260A714C007C5875 /* LiveDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,9 @@
 		260B6DF925F2CC19000FFFFF /* LiveVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoModel.swift; sourceTree = "<group>"; };
 		260B6E0625F807EC000FFFFF /* LiveResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveResponse.swift; sourceTree = "<group>"; };
 		2640BD7825E04E2A00E70A1F /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		2665A700260D4D98002BD7BF /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		2665A706260E89D6002BD7BF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		2665A70B260EA6FD002BD7BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2676B82C25E1A0A3003A911B /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		2676B83025E5BF5A003A911B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2676B83325E5D26B003A911B /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
@@ -54,6 +62,8 @@
 		267C240425DC960E003FACFB /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		267C240725DDA2D3003FACFB /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
 		267C240B25DDD8AA003FACFB /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		26C68DEA260A6BC3007C5875 /* LiveVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoTableViewCell.swift; sourceTree = "<group>"; };
+		26C68DED260A714C007C5875 /* LiveDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDetailViewController.swift; sourceTree = "<group>"; };
 		D2DC51D3E8668F506943FF05 /* Pods-SharonBaptistHamptonVA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharonBaptistHamptonVA.release.xcconfig"; path = "Target Support Files/Pods-SharonBaptistHamptonVA/Pods-SharonBaptistHamptonVA.release.xcconfig"; sourceTree = "<group>"; };
 		FA297127FB5082A1ABB363CB /* Pods-SharonBaptistHamptonVA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharonBaptistHamptonVA.debug.xcconfig"; path = "Target Support Files/Pods-SharonBaptistHamptonVA/Pods-SharonBaptistHamptonVA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,7 +85,9 @@
 			children = (
 				267C240B25DDD8AA003FACFB /* PlaylistViewController.swift */,
 				260B6DF125F15BFD000FFFFF /* LiveVideoViewController.swift */,
+				2665A70B260EA6FD002BD7BF /* HomeViewController.swift */,
 				2676B83025E5BF5A003A911B /* DetailViewController.swift */,
+				26C68DED260A714C007C5875 /* LiveDetailViewController.swift */,
 				260B6DEA25ED6F34000FFFFF /* MediaOptionsViewController.swift */,
 			);
 			path = ViewControllers;
@@ -85,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				2640BD7825E04E2A00E70A1F /* VideoTableViewCell.swift */,
+				26C68DEA260A6BC3007C5875 /* LiveVideoTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,8 +109,19 @@
 				2676B82C25E1A0A3003A911B /* CacheManager.swift */,
 				267C23ED25D71CEC003FACFB /* Constants.swift */,
 				2676B83325E5D26B003A911B /* DateManager.swift */,
+				2665A700260D4D98002BD7BF /* UIButtonExtensions.swift */,
+				2665A706260E89D6002BD7BF /* CustomButton.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2665A6FB260D4045002BD7BF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				267C23F925DC24DB003FACFB /* PlaylistModel.swift */,
+				260B6DF925F2CC19000FFFFF /* LiveVideoModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		2676B83625E6CD1F003A911B /* Frameworks */ = {
@@ -130,7 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				267C23F225D71D42003FACFB /* Storyboards */,
-				267C23F125D71D33003FACFB /* Controllers */,
+				2665A6FB260D4045002BD7BF /* ViewModels */,
 				260B6E0A25F80A60000FFFFF /* ViewControllers */,
 				2640BD7B25E04E8100E70A1F /* Views */,
 				267C23F425D71D70003FACFB /* Models */,
@@ -148,15 +172,6 @@
 				267C23D725D6FA32003FACFB /* AppDelegate.swift */,
 			);
 			path = Delegates;
-			sourceTree = "<group>";
-		};
-		267C23F125D71D33003FACFB /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				267C23F925DC24DB003FACFB /* PlaylistModel.swift */,
-				260B6DF925F2CC19000FFFFF /* LiveVideoModel.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		267C23F225D71D42003FACFB /* Storyboards */ = {
@@ -318,12 +333,16 @@
 				2676B83125E5BF5A003A911B /* DetailViewController.swift in Sources */,
 				2676B83425E5D26B003A911B /* DateManager.swift in Sources */,
 				267C23D825D6FA32003FACFB /* AppDelegate.swift in Sources */,
+				26C68DEE260A714C007C5875 /* LiveDetailViewController.swift in Sources */,
 				267C23DA25D6FA32003FACFB /* SceneDelegate.swift in Sources */,
+				2665A701260D4D98002BD7BF /* UIButtonExtensions.swift in Sources */,
 				267C240825DDA2D3003FACFB /* ConstantsTemplate.swift in Sources */,
+				2665A70C260EA6FD002BD7BF /* HomeViewController.swift in Sources */,
 				260B6DEB25ED6F34000FFFFF /* MediaOptionsViewController.swift in Sources */,
 				267C23FA25DC24DB003FACFB /* PlaylistModel.swift in Sources */,
 				260B6E0725F807EC000FFFFF /* LiveResponse.swift in Sources */,
 				267C23EE25D71CEC003FACFB /* Constants.swift in Sources */,
+				2665A707260E89D6002BD7BF /* CustomButton.swift in Sources */,
 				2676B82D25E1A0A3003A911B /* CacheManager.swift in Sources */,
 				267C23F725DC21E3003FACFB /* Video.swift in Sources */,
 				260B6DF225F15BFD000FFFFF /* LiveVideoViewController.swift in Sources */,
@@ -332,6 +351,7 @@
 				267C240525DC960E003FACFB /* Response.swift in Sources */,
 				2640BD7925E04E2A00E70A1F /* VideoTableViewCell.swift in Sources */,
 				260B6DFA25F2CC19000FFFFF /* LiveVideoModel.swift in Sources */,
+				26C68DEB260A6BC3007C5875 /* LiveVideoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

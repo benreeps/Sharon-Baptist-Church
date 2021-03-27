@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol LiveVideoControllerDelegate {
+protocol LiveVideoModelDelegate {
     func liveVideosFetched(_ liveVideos: [LiveVideo])
 }
 
-class LiveVideoController {
+class LiveVideoModel {
     
-    var delegate: LiveVideoControllerDelegate?
+    var delegate: LiveVideoModelDelegate?
     
     func getLiveVideos() {
         

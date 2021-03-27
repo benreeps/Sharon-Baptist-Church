@@ -1,44 +1,46 @@
 //
-//  VideoTableViewCell.swift
-//  SharonBaptistChurch
+//  LiveVideoTableViewCell.swift
+//  SharonBaptistHamptonVA
 //
-//  Created by Benjamin Reeps on 2/19/21.
+//  Created by Benjamin Reeps on 3/23/21.
 //
 
 import UIKit
 
-class VideoTableViewCell: UITableViewCell {
+class LiveVideoTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var thumbnailImageView: UIImageView!
     
-    var video:Video?
     
-    func setCell(_ v:Video) {
+    
+    var liveVideo:LiveVideo?
+    
+    func setCell(_ v:LiveVideo) {
         
-        self.video = v
+        self.liveVideo = v
         
-        guard self.video != nil else {return}
+        guard self.liveVideo != nil else {return}
         
-        self.titleLabel.text = video?.title
+        self.titleLabel.text = liveVideo?.title
         
         thumbnailImageView.layer.cornerRadius = 15.00
-
+        
         // Format the video.date into a string
-        updateVideoDateFormat(date: video!.published)
+        updateVideoDateFormat(date: liveVideo!.published)
         
         // Set the thumbnail
-        guard self.video!.thumbnail != "" else {return}
+        guard self.liveVideo!.thumbnail != "" else {return}
         
         // Check cache before downloading data
-        if let cachedData = CacheManager.getVideoCache(self.video!.thumbnail) {
+        if let cachedData = CacheManager.getVideoCache(self.liveVideo!.thumbnail) {
             
             self.thumbnailImageView.image = UIImage(data: cachedData)
         }
         
         // Download thumbnial data
-        let url = URL(string: self.video!.thumbnail)
+        let url = URL(string: self.liveVideo!.thumbnail)
         
         let session = URLSession.shared
         
@@ -49,7 +51,7 @@ class VideoTableViewCell: UITableViewCell {
                 // Save the data in the cache
                 CacheManager.setVideoCache(url!.absoluteString, data)
                 
-                if url!.absoluteString != self.video?.thumbnail {
+                if url!.absoluteString != self.liveVideo?.thumbnail {
                     return
                 }
                 
