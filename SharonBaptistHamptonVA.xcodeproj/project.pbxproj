@@ -85,9 +85,9 @@
 			children = (
 				267C240B25DDD8AA003FACFB /* PlaylistViewController.swift */,
 				260B6DF125F15BFD000FFFFF /* LiveVideoViewController.swift */,
-				2665A70B260EA6FD002BD7BF /* HomeViewController.swift */,
 				2676B83025E5BF5A003A911B /* DetailViewController.swift */,
 				26C68DED260A714C007C5875 /* LiveDetailViewController.swift */,
+				2665A70B260EA6FD002BD7BF /* HomeViewController.swift */,
 				260B6DEA25ED6F34000FFFFF /* MediaOptionsViewController.swift */,
 			);
 			path = ViewControllers;
