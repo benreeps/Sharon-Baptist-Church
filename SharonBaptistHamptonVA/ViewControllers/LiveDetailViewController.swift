@@ -27,9 +27,9 @@ class LiveDetailViewController: UIViewController {
         guard liveVideo != nil else {return}
         
         // Create the embed url
-       // let embedUrlString = Constants.YT_EMBED_URL + liveVideo!.videoId
+      //  let embedUrlString = Constants.YT_EMBED_URL + liveVideo!.videoId
         
-        self.liveVideoPlayerView.load(withPlaylistId: liveVideo!.videoId)
+        self.liveVideoPlayerView.load(withVideoId: liveVideo!.videoId)
        // self.liveVideoPlayerView.loadVideo(byURL: embedUrlString, startSeconds: 0)
         
     }

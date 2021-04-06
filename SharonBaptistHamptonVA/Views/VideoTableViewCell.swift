@@ -23,7 +23,7 @@ class VideoTableViewCell: UITableViewCell {
         
         self.titleLabel.text = video?.title
         
-        thumbnailImageView.layer.cornerRadius = 15.00
+        thumbnailImageView.layer.cornerRadius = 13.00
 
         // Format the video.date into a string
         updateVideoDateFormat(date: video!.published)
