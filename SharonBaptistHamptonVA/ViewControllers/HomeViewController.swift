@@ -13,12 +13,27 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var ourTeamView: UIView!
     @IBOutlet weak var ourVisionButton: UIButton!
+    @IBOutlet weak var podcastButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ourVisionButton.layer.cornerRadius = 9
         setTitleViewImage()
+    }
+    
+    @IBAction func ourVisionButtonPressed(_ sender: Any) {
+        
+        if let url = NSURL(string: "https://www.sharonbaptisthamptonva.com/vision.html") {
+            UIApplication.shared.open(url as URL, options: [:], completionHandler:nil)
+        }
+    }
+    
+    @IBAction func podcastButtonPressed(_ sender: Any) {
+        
+        if let url = NSURL(string: "https://www.sharonbaptisthamptonva.com/podcasts.html") {
+            UIApplication.shared.open(url as URL, options: [:], completionHandler:nil)
+        }
     }
     
     func setTitleViewImage() {

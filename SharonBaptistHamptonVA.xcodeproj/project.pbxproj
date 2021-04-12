@@ -31,8 +31,15 @@
 		267C240525DC960E003FACFB /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240425DC960E003FACFB /* Response.swift */; };
 		267C240825DDA2D3003FACFB /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240725DDA2D3003FACFB /* ConstantsTemplate.swift */; };
 		267C240C25DDD8AA003FACFB /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240B25DDD8AA003FACFB /* PlaylistViewController.swift */; };
+		26BA0FB5261F93DA002AF2DC /* OurLeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA0FB4261F93DA002AF2DC /* OurLeadersViewController.swift */; };
+		26BA0FB9261F9E73002AF2DC /* OurLeadersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA0FB8261F9E73002AF2DC /* OurLeadersTableViewCell.swift */; };
+		26BA0FBE2620D3ED002AF2DC /* Leader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA0FBD2620D3ED002AF2DC /* Leader.swift */; };
 		26C68DEB260A6BC3007C5875 /* LiveVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C68DEA260A6BC3007C5875 /* LiveVideoTableViewCell.swift */; };
 		26C68DEE260A714C007C5875 /* LiveDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C68DED260A714C007C5875 /* LiveDetailViewController.swift */; };
+		26D9387C2620EBB800D64873 /* OurLeadersDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9387B2620EBB800D64873 /* OurLeadersDetailViewController.swift */; };
+		26D9387F2624AB8600D64873 /* MinistriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9387E2624AB8500D64873 /* MinistriesViewController.swift */; };
+		26D938822624AC0300D64873 /* MinistriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D938812624AC0300D64873 /* MinistriesTableViewCell.swift */; };
+		26D938852624B19600D64873 /* Ministry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D938842624B19600D64873 /* Ministry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,8 +69,15 @@
 		267C240425DC960E003FACFB /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		267C240725DDA2D3003FACFB /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
 		267C240B25DDD8AA003FACFB /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		26BA0FB4261F93DA002AF2DC /* OurLeadersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurLeadersViewController.swift; sourceTree = "<group>"; };
+		26BA0FB8261F9E73002AF2DC /* OurLeadersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurLeadersTableViewCell.swift; sourceTree = "<group>"; };
+		26BA0FBD2620D3ED002AF2DC /* Leader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leader.swift; sourceTree = "<group>"; };
 		26C68DEA260A6BC3007C5875 /* LiveVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoTableViewCell.swift; sourceTree = "<group>"; };
 		26C68DED260A714C007C5875 /* LiveDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDetailViewController.swift; sourceTree = "<group>"; };
+		26D9387B2620EBB800D64873 /* OurLeadersDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurLeadersDetailViewController.swift; sourceTree = "<group>"; };
+		26D9387E2624AB8500D64873 /* MinistriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistriesViewController.swift; sourceTree = "<group>"; };
+		26D938812624AC0300D64873 /* MinistriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistriesTableViewCell.swift; sourceTree = "<group>"; };
+		26D938842624B19600D64873 /* Ministry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ministry.swift; sourceTree = "<group>"; };
 		D2DC51D3E8668F506943FF05 /* Pods-SharonBaptistHamptonVA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharonBaptistHamptonVA.release.xcconfig"; path = "Target Support Files/Pods-SharonBaptistHamptonVA/Pods-SharonBaptistHamptonVA.release.xcconfig"; sourceTree = "<group>"; };
 		FA297127FB5082A1ABB363CB /* Pods-SharonBaptistHamptonVA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharonBaptistHamptonVA.debug.xcconfig"; path = "Target Support Files/Pods-SharonBaptistHamptonVA/Pods-SharonBaptistHamptonVA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +99,9 @@
 			children = (
 				267C240B25DDD8AA003FACFB /* PlaylistViewController.swift */,
 				260B6DF125F15BFD000FFFFF /* LiveVideoViewController.swift */,
+				26BA0FB4261F93DA002AF2DC /* OurLeadersViewController.swift */,
+				26D9387B2620EBB800D64873 /* OurLeadersDetailViewController.swift */,
+				26D9387E2624AB8500D64873 /* MinistriesViewController.swift */,
 				2676B83025E5BF5A003A911B /* DetailViewController.swift */,
 				26C68DED260A714C007C5875 /* LiveDetailViewController.swift */,
 				2665A70B260EA6FD002BD7BF /* HomeViewController.swift */,
@@ -97,7 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				2640BD7825E04E2A00E70A1F /* VideoTableViewCell.swift */,
+				26D938812624AC0300D64873 /* MinistriesTableViewCell.swift */,
 				26C68DEA260A6BC3007C5875 /* LiveVideoTableViewCell.swift */,
+				26BA0FB8261F9E73002AF2DC /* OurLeadersTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +215,8 @@
 			isa = PBXGroup;
 			children = (
 				267C23F625DC21E3003FACFB /* Video.swift */,
+				26BA0FBD2620D3ED002AF2DC /* Leader.swift */,
+				26D938842624B19600D64873 /* Ministry.swift */,
 				260B6DF625F2C678000FFFFF /* LiveVideo.swift */,
 				267C240425DC960E003FACFB /* Response.swift */,
 				260B6E0625F807EC000FFFFF /* LiveResponse.swift */,
@@ -330,8 +351,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26BA0FBE2620D3ED002AF2DC /* Leader.swift in Sources */,
+				26D9387C2620EBB800D64873 /* OurLeadersDetailViewController.swift in Sources */,
 				2676B83125E5BF5A003A911B /* DetailViewController.swift in Sources */,
+				26BA0FB9261F9E73002AF2DC /* OurLeadersTableViewCell.swift in Sources */,
 				2676B83425E5D26B003A911B /* DateManager.swift in Sources */,
+				26BA0FB5261F93DA002AF2DC /* OurLeadersViewController.swift in Sources */,
 				267C23D825D6FA32003FACFB /* AppDelegate.swift in Sources */,
 				26C68DEE260A714C007C5875 /* LiveDetailViewController.swift in Sources */,
 				267C23DA25D6FA32003FACFB /* SceneDelegate.swift in Sources */,
@@ -344,13 +369,16 @@
 				267C23EE25D71CEC003FACFB /* Constants.swift in Sources */,
 				2665A707260E89D6002BD7BF /* ButtonWithShadow.swift in Sources */,
 				2676B82D25E1A0A3003A911B /* CacheManager.swift in Sources */,
+				26D938822624AC0300D64873 /* MinistriesTableViewCell.swift in Sources */,
 				267C23F725DC21E3003FACFB /* Video.swift in Sources */,
 				260B6DF225F15BFD000FFFFF /* LiveVideoViewController.swift in Sources */,
 				260B6DF725F2C679000FFFFF /* LiveVideo.swift in Sources */,
+				26D9387F2624AB8600D64873 /* MinistriesViewController.swift in Sources */,
 				267C240C25DDD8AA003FACFB /* PlaylistViewController.swift in Sources */,
 				267C240525DC960E003FACFB /* Response.swift in Sources */,
 				2640BD7925E04E2A00E70A1F /* VideoTableViewCell.swift in Sources */,
 				260B6DFA25F2CC19000FFFFF /* LiveVideoModel.swift in Sources */,
+				26D938852624B19600D64873 /* Ministry.swift in Sources */,
 				26C68DEB260A6BC3007C5875 /* LiveVideoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
