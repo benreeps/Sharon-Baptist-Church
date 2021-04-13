@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var ourTeamView: UIView!
     @IBOutlet weak var ourVisionButton: UIButton!
     @IBOutlet weak var podcastButton: UIButton!
+    @IBOutlet weak var contactUsButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,13 @@ class HomeViewController: UIViewController {
     @IBAction func podcastButtonPressed(_ sender: Any) {
         
         if let url = NSURL(string: "https://www.sharonbaptisthamptonva.com/podcasts.html") {
+            UIApplication.shared.open(url as URL, options: [:], completionHandler:nil)
+        }
+    }
+    
+    @IBAction func contactUsButtonPressed(_ sender: Any) {
+        
+        if let url = NSURL(string: "https://www.sharonbaptisthamptonva.com/contact-us.html") {
             UIApplication.shared.open(url as URL, options: [:], completionHandler:nil)
         }
     }

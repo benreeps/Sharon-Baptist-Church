@@ -40,6 +40,8 @@
 		26D9387F2624AB8600D64873 /* MinistriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9387E2624AB8500D64873 /* MinistriesViewController.swift */; };
 		26D938822624AC0300D64873 /* MinistriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D938812624AC0300D64873 /* MinistriesTableViewCell.swift */; };
 		26D938852624B19600D64873 /* Ministry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D938842624B19600D64873 /* Ministry.swift */; };
+		26D938882625F1D900D64873 /* GiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D938872625F1D800D64873 /* GiveViewController.swift */; };
+		26D9388B2625F76E00D64873 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9388A2625F76D00D64873 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,8 @@
 		26D9387E2624AB8500D64873 /* MinistriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistriesViewController.swift; sourceTree = "<group>"; };
 		26D938812624AC0300D64873 /* MinistriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistriesTableViewCell.swift; sourceTree = "<group>"; };
 		26D938842624B19600D64873 /* Ministry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ministry.swift; sourceTree = "<group>"; };
+		26D938872625F1D800D64873 /* GiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveViewController.swift; sourceTree = "<group>"; };
+		26D9388A2625F76D00D64873 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		D2DC51D3E8668F506943FF05 /* Pods-SharonBaptistHamptonVA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharonBaptistHamptonVA.release.xcconfig"; path = "Target Support Files/Pods-SharonBaptistHamptonVA/Pods-SharonBaptistHamptonVA.release.xcconfig"; sourceTree = "<group>"; };
 		FA297127FB5082A1ABB363CB /* Pods-SharonBaptistHamptonVA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharonBaptistHamptonVA.debug.xcconfig"; path = "Target Support Files/Pods-SharonBaptistHamptonVA/Pods-SharonBaptistHamptonVA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +110,8 @@
 				26C68DED260A714C007C5875 /* LiveDetailViewController.swift */,
 				2665A70B260EA6FD002BD7BF /* HomeViewController.swift */,
 				260B6DEA25ED6F34000FFFFF /* MediaOptionsViewController.swift */,
+				26D9388A2625F76D00D64873 /* TabBarController.swift */,
+				26D938872625F1D800D64873 /* GiveViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -366,10 +372,12 @@
 				260B6DEB25ED6F34000FFFFF /* MediaOptionsViewController.swift in Sources */,
 				267C23FA25DC24DB003FACFB /* PlaylistModel.swift in Sources */,
 				260B6E0725F807EC000FFFFF /* LiveResponse.swift in Sources */,
+				26D9388B2625F76E00D64873 /* TabBarController.swift in Sources */,
 				267C23EE25D71CEC003FACFB /* Constants.swift in Sources */,
 				2665A707260E89D6002BD7BF /* ButtonWithShadow.swift in Sources */,
 				2676B82D25E1A0A3003A911B /* CacheManager.swift in Sources */,
 				26D938822624AC0300D64873 /* MinistriesTableViewCell.swift in Sources */,
+				26D938882625F1D900D64873 /* GiveViewController.swift in Sources */,
 				267C23F725DC21E3003FACFB /* Video.swift in Sources */,
 				260B6DF225F15BFD000FFFFF /* LiveVideoViewController.swift in Sources */,
 				260B6DF725F2C679000FFFFF /* LiveVideo.swift in Sources */,
