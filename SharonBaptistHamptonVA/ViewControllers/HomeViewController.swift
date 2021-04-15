@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var ourTeamView: UIView!

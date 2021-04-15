@@ -12,15 +12,15 @@ class OurLeadersViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var leaders: [Leader] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.delegate = self
         tableView.dataSource = self
         
         leaders = createLeaderArray()
-
+        
     }
     
     func createLeaderArray() -> [Leader] {
@@ -37,31 +37,31 @@ class OurLeadersViewController: UIViewController {
         return tempLeaders
         
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "LeaderDetailSegue" {
-                let ourLeadersDetailViewController = segue.destination as! OurLeadersDetailViewController
-                let index = tableView.indexPathForSelectedRow!.row
-                ourLeadersDetailViewController.leader = leaders[index]
-            }
+        if segue.identifier == "LeaderDetailSegue" {
+            let ourLeadersDetailViewController = segue.destination as! OurLeadersDetailViewController
+            let index = tableView.indexPathForSelectedRow!.row
+            ourLeadersDetailViewController.leader = leaders[index]
         }
+    }
 }
 
 // MARK: - Table view data source
 
 extension OurLeadersViewController: UITableViewDelegate, UITableViewDataSource{
     
-     func numberOfSections(in tableView: UITableView) -> Int {
-       
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
         return 1
     }
-
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return leaders.count
     }
-
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let leader = leaders[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "leaderTableViewCell") as! OurLeadersTableViewCell

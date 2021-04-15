@@ -19,7 +19,6 @@ class CustomButton: UIButton {
         setShadow()
     }
     
-    
     func setShadow() {
         
         clipsToBounds = true
@@ -29,5 +28,4 @@ class CustomButton: UIButton {
         layer.shadowOffset = CGSize(width: 3, height: 3)
         layer.shadowColor = UIColor.black.cgColor
     }
- 
 }

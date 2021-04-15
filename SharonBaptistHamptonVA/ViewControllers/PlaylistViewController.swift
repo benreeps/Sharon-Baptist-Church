@@ -40,7 +40,7 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
             self.tableView.reloadData()
         }
     }
-   
+    
     //MARK:- TableView methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,10 +55,6 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.setCell(video)
         
         return cell 
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

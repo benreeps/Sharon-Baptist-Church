@@ -38,7 +38,7 @@ class LiveVideoViewController: UIViewController, UITableViewDataSource, UITableV
             
         }
     }
-
+    
     //MARK:- TableView methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,10 +53,6 @@ class LiveVideoViewController: UIViewController, UITableViewDataSource, UITableV
         cell.setCell(liveVideo)
         
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

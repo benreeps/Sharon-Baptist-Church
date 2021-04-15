@@ -8,10 +8,9 @@
 import UIKit
 
 class MinistriesTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var ministryImageView: UIImageView!
     @IBOutlet weak var ministryTitleLabel: UILabel!
-    
     
     func setMinistry(ministry: Ministry) {
         
@@ -24,12 +23,11 @@ class MinistriesTableViewCell: UITableViewCell {
 }
 
 extension UIImageView {
-  public func maskCircle(anyImage: UIImage) {
-    self.contentMode = UIView.ContentMode.scaleAspectFill
-    self.layer.cornerRadius = self.frame.height / 2
-    self.layer.masksToBounds = false
-    self.clipsToBounds = true
-
-   self.image = anyImage
-  }
+    public func maskCircle(anyImage: UIImage) {
+        self.contentMode = UIView.ContentMode.scaleAspectFill
+        self.layer.cornerRadius = self.frame.height / 2
+        self.layer.masksToBounds = false
+        self.clipsToBounds = true
+        self.image = anyImage
+    }
 }

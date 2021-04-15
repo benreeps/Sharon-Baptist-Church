@@ -41,7 +41,7 @@ class LiveVideoModel {
                 // Specify the type of data you want to decode the data into
                 
                 let liveResponse = try decoder.decode(LiveResponse.self, from: data!)
-        
+                
                 if liveResponse.items != nil {
                     
                     DispatchQueue.main.async {
@@ -54,7 +54,6 @@ class LiveVideoModel {
             }
             catch {
                 
-                print("err")
             }
         }
         dataTask.resume()

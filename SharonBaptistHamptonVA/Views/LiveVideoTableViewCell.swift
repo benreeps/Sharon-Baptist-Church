@@ -13,8 +13,6 @@ class LiveVideoTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var thumbnailImageView: UIImageView!
     
-    
-    
     var liveVideo:LiveVideo?
     
     func setCell(_ v:LiveVideo) {
@@ -25,7 +23,7 @@ class LiveVideoTableViewCell: UITableViewCell {
         
         self.titleLabel.text = liveVideo?.title
         
-        thumbnailImageView.layer.cornerRadius = 15.00
+        thumbnailImageView.layer.cornerRadius = 13.00
         
         // Format the video.date into a string
         updateVideoDateFormat(date: liveVideo!.published)

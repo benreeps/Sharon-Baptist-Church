@@ -16,11 +16,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     
     var video: Video?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,7 +50,6 @@ class DetailViewController: UIViewController {
         textView.text = video!.description
     }
     
-
     func updateVideoDateFormat(date: Date) {
         self.dateLabel.text = DateManager.videoDateFormatter.string(from: date)
     }

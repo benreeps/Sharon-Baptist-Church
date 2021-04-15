@@ -8,16 +8,11 @@
 import UIKit
 
 class GiveViewController: UIViewController, UITabBarDelegate {
-
- 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      
-        }
-    
-    
+        
+    }
 }
 
 

@@ -9,22 +9,17 @@ import UIKit
 
 class MediaOptionsViewController: UIViewController {
     
+    @IBOutlet weak var allSermonsView: UIView!
     @IBOutlet weak var allSermonsButton: UIButton!
     @IBOutlet weak var liveSermonButton: UIButton!
+    @IBOutlet weak var liveSermonView: UIView!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
-    
-    @IBAction func allSermonsButtonPressed(_ sender: UIButton) {
-      
-        sender.pulsate()
-    }
-    @IBAction func liveSermonButtonPressed(_ sender: UIButton) {
-        
-        sender.pulsate()
+        allSermonsView.layer.cornerRadius = 10
+        liveSermonView.layer.cornerRadius = 10
+        allSermonsButton.layer.cornerRadius = 10
+        allSermonsButton.layer.cornerRadius = 10
     }
     
 }

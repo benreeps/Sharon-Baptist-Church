@@ -12,13 +12,13 @@ class MinistriesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var ministries: [Ministry] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.delegate = self
         tableView.dataSource = self
-      
+        
         ministries = createMinistryArray()
     }
     
@@ -49,24 +49,24 @@ class MinistriesViewController: UIViewController {
         return tempMenistries
         
     }
-
+    
 }
 
 // MARK: - Table view data source
 
 extension MinistriesViewController: UITableViewDelegate, UITableViewDataSource{
     
-     func numberOfSections(in tableView: UITableView) -> Int {
-       
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
         return 1
     }
-
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return ministries.count
     }
-
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let ministry = ministries[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MinistryTableViewCell") as! MinistriesTableViewCell

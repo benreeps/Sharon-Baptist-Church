@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		108695B9226BD248805ED7E0 /* Pods_SharonBaptistHamptonVA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0CD70DDA28B270993666C8 /* Pods_SharonBaptistHamptonVA.framework */; };
 		260B6DEB25ED6F34000FFFFF /* MediaOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6DEA25ED6F34000FFFFF /* MediaOptionsViewController.swift */; };
 		260B6DF225F15BFD000FFFFF /* LiveVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6DF125F15BFD000FFFFF /* LiveVideoViewController.swift */; };
 		260B6DF725F2C679000FFFFF /* LiveVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6DF625F2C678000FFFFF /* LiveVideo.swift */; };
 		260B6DFA25F2CC19000FFFFF /* LiveVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6DF925F2CC19000FFFFF /* LiveVideoModel.swift */; };
 		260B6E0725F807EC000FFFFF /* LiveResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B6E0625F807EC000FFFFF /* LiveResponse.swift */; };
 		2640BD7925E04E2A00E70A1F /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640BD7825E04E2A00E70A1F /* VideoTableViewCell.swift */; };
-		2665A701260D4D98002BD7BF /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665A700260D4D98002BD7BF /* UIButtonExtensions.swift */; };
-		2665A707260E89D6002BD7BF /* ButtonWithShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665A706260E89D6002BD7BF /* ButtonWithShadow.swift */; };
 		2665A70C260EA6FD002BD7BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665A70B260EA6FD002BD7BF /* HomeViewController.swift */; };
 		2676B82D25E1A0A3003A911B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676B82C25E1A0A3003A911B /* CacheManager.swift */; };
 		2676B83125E5BF5A003A911B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676B83025E5BF5A003A911B /* DetailViewController.swift */; };
@@ -51,8 +50,6 @@
 		260B6DF925F2CC19000FFFFF /* LiveVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoModel.swift; sourceTree = "<group>"; };
 		260B6E0625F807EC000FFFFF /* LiveResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveResponse.swift; sourceTree = "<group>"; };
 		2640BD7825E04E2A00E70A1F /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
-		2665A700260D4D98002BD7BF /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
-		2665A706260E89D6002BD7BF /* ButtonWithShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithShadow.swift; sourceTree = "<group>"; };
 		2665A70B260EA6FD002BD7BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2676B82C25E1A0A3003A911B /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		2676B83025E5BF5A003A911B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +79,7 @@
 		26D938842624B19600D64873 /* Ministry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ministry.swift; sourceTree = "<group>"; };
 		26D938872625F1D800D64873 /* GiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveViewController.swift; sourceTree = "<group>"; };
 		26D9388A2625F76D00D64873 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		9B0CD70DDA28B270993666C8 /* Pods_SharonBaptistHamptonVA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharonBaptistHamptonVA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2DC51D3E8668F506943FF05 /* Pods-SharonBaptistHamptonVA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharonBaptistHamptonVA.release.xcconfig"; path = "Target Support Files/Pods-SharonBaptistHamptonVA/Pods-SharonBaptistHamptonVA.release.xcconfig"; sourceTree = "<group>"; };
 		FA297127FB5082A1ABB363CB /* Pods-SharonBaptistHamptonVA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharonBaptistHamptonVA.debug.xcconfig"; path = "Target Support Files/Pods-SharonBaptistHamptonVA/Pods-SharonBaptistHamptonVA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2676B83825E6CD1F003A911B /* WebKit.framework in Frameworks */,
+				108695B9226BD248805ED7E0 /* Pods_SharonBaptistHamptonVA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,25 +133,15 @@
 				2676B82C25E1A0A3003A911B /* CacheManager.swift */,
 				267C23ED25D71CEC003FACFB /* Constants.swift */,
 				2676B83325E5D26B003A911B /* DateManager.swift */,
-				2665A700260D4D98002BD7BF /* UIButtonExtensions.swift */,
-				2665A706260E89D6002BD7BF /* ButtonWithShadow.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		2665A6FB260D4045002BD7BF /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				267C23F925DC24DB003FACFB /* PlaylistModel.swift */,
-				260B6DF925F2CC19000FFFFF /* LiveVideoModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		2676B83625E6CD1F003A911B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				2676B83725E6CD1F003A911B /* WebKit.framework */,
+				9B0CD70DDA28B270993666C8 /* Pods_SharonBaptistHamptonVA.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				267C23F225D71D42003FACFB /* Storyboards */,
-				2665A6FB260D4045002BD7BF /* ViewModels */,
 				260B6E0A25F80A60000FFFFF /* ViewControllers */,
 				2640BD7B25E04E8100E70A1F /* Views */,
 				267C23F425D71D70003FACFB /* Models */,
@@ -220,6 +208,8 @@
 		267C23F425D71D70003FACFB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				260B6DF925F2CC19000FFFFF /* LiveVideoModel.swift */,
+				267C23F925DC24DB003FACFB /* PlaylistModel.swift */,
 				267C23F625DC21E3003FACFB /* Video.swift */,
 				26BA0FBD2620D3ED002AF2DC /* Leader.swift */,
 				26D938842624B19600D64873 /* Ministry.swift */,
@@ -257,8 +247,6 @@
 			dependencies = (
 			);
 			name = SharonBaptistHamptonVA;
-			packageProductDependencies = (
-			);
 			productName = SharonBaptistChurch;
 			productReference = 267C23D425D6FA32003FACFB /* SharonBaptistHamptonVA.app */;
 			productType = "com.apple.product-type.application";
@@ -286,8 +274,6 @@
 				Base,
 			);
 			mainGroup = 267C23CB25D6FA32003FACFB;
-			packageReferences = (
-			);
 			productRefGroup = 267C23D525D6FA32003FACFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,7 +352,6 @@
 				267C23D825D6FA32003FACFB /* AppDelegate.swift in Sources */,
 				26C68DEE260A714C007C5875 /* LiveDetailViewController.swift in Sources */,
 				267C23DA25D6FA32003FACFB /* SceneDelegate.swift in Sources */,
-				2665A701260D4D98002BD7BF /* UIButtonExtensions.swift in Sources */,
 				267C240825DDA2D3003FACFB /* ConstantsTemplate.swift in Sources */,
 				2665A70C260EA6FD002BD7BF /* HomeViewController.swift in Sources */,
 				260B6DEB25ED6F34000FFFFF /* MediaOptionsViewController.swift in Sources */,
@@ -374,7 +359,6 @@
 				260B6E0725F807EC000FFFFF /* LiveResponse.swift in Sources */,
 				26D9388B2625F76E00D64873 /* TabBarController.swift in Sources */,
 				267C23EE25D71CEC003FACFB /* Constants.swift in Sources */,
-				2665A707260E89D6002BD7BF /* ButtonWithShadow.swift in Sources */,
 				2676B82D25E1A0A3003A911B /* CacheManager.swift in Sources */,
 				26D938822624AC0300D64873 /* MinistriesTableViewCell.swift in Sources */,
 				26D938882625F1D900D64873 /* GiveViewController.swift in Sources */,
