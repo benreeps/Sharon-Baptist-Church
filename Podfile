@@ -7,5 +7,5 @@ target 'SharonBaptistHamptonVA' do
 
   # Pods for SharonBaptistHamptonVA
   pod "youtube-ios-player-helper", "~> 1.0.3"
-  pod 'TinyConstraints'
+  
 end
