@@ -30,6 +30,12 @@
 		267C240525DC960E003FACFB /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240425DC960E003FACFB /* Response.swift */; };
 		267C240825DDA2D3003FACFB /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240725DDA2D3003FACFB /* ConstantsTemplate.swift */; };
 		267C240C25DDD8AA003FACFB /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C240B25DDD8AA003FACFB /* PlaylistViewController.swift */; };
+		26806D5C262E161A00142D8F /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806D5B262E161A00142D8F /* VisionViewController.swift */; };
+		26806D5F262E1CBA00142D8F /* VisionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806D5E262E1CBA00142D8F /* VisionDetailViewController.swift */; };
+		26806D62262F534D00142D8F /* XML_Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806D61262F534D00142D8F /* XML_Parser.swift */; };
+		26806D65262F543C00142D8F /* PodcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806D64262F543C00142D8F /* PodcastTableViewCell.swift */; };
+		26806D68262F567400142D8F /* PodcastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806D67262F567400142D8F /* PodcastTableViewController.swift */; };
+		26B5312326308710000076DA /* PodcastDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B5312226308710000076DA /* PodcastDetailViewController.swift */; };
 		26BA0FB5261F93DA002AF2DC /* OurLeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA0FB4261F93DA002AF2DC /* OurLeadersViewController.swift */; };
 		26BA0FB9261F9E73002AF2DC /* OurLeadersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA0FB8261F9E73002AF2DC /* OurLeadersTableViewCell.swift */; };
 		26BA0FBE2620D3ED002AF2DC /* Leader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA0FBD2620D3ED002AF2DC /* Leader.swift */; };
@@ -68,6 +74,12 @@
 		267C240425DC960E003FACFB /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		267C240725DDA2D3003FACFB /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
 		267C240B25DDD8AA003FACFB /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		26806D5B262E161A00142D8F /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
+		26806D5E262E1CBA00142D8F /* VisionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionDetailViewController.swift; sourceTree = "<group>"; };
+		26806D61262F534D00142D8F /* XML_Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XML_Parser.swift; sourceTree = "<group>"; };
+		26806D64262F543C00142D8F /* PodcastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTableViewCell.swift; sourceTree = "<group>"; };
+		26806D67262F567400142D8F /* PodcastTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTableViewController.swift; sourceTree = "<group>"; };
+		26B5312226308710000076DA /* PodcastDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetailViewController.swift; sourceTree = "<group>"; };
 		26BA0FB4261F93DA002AF2DC /* OurLeadersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurLeadersViewController.swift; sourceTree = "<group>"; };
 		26BA0FB8261F9E73002AF2DC /* OurLeadersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurLeadersTableViewCell.swift; sourceTree = "<group>"; };
 		26BA0FBD2620D3ED002AF2DC /* Leader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leader.swift; sourceTree = "<group>"; };
@@ -107,6 +119,10 @@
 				26D9387E2624AB8500D64873 /* MinistriesViewController.swift */,
 				2676B83025E5BF5A003A911B /* DetailViewController.swift */,
 				26C68DED260A714C007C5875 /* LiveDetailViewController.swift */,
+				26806D67262F567400142D8F /* PodcastTableViewController.swift */,
+				26B5312226308710000076DA /* PodcastDetailViewController.swift */,
+				26806D5B262E161A00142D8F /* VisionViewController.swift */,
+				26806D5E262E1CBA00142D8F /* VisionDetailViewController.swift */,
 				2665A70B260EA6FD002BD7BF /* HomeViewController.swift */,
 				260B6DEA25ED6F34000FFFFF /* MediaOptionsViewController.swift */,
 				26D9388A2625F76D00D64873 /* TabBarController.swift */,
@@ -122,6 +138,7 @@
 				26D938812624AC0300D64873 /* MinistriesTableViewCell.swift */,
 				26C68DEA260A6BC3007C5875 /* LiveVideoTableViewCell.swift */,
 				26BA0FB8261F9E73002AF2DC /* OurLeadersTableViewCell.swift */,
+				26806D64262F543C00142D8F /* PodcastTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,6 +148,7 @@
 			children = (
 				267C240725DDA2D3003FACFB /* ConstantsTemplate.swift */,
 				2676B82C25E1A0A3003A911B /* CacheManager.swift */,
+				26806D61262F534D00142D8F /* XML_Parser.swift */,
 				267C23ED25D71CEC003FACFB /* Constants.swift */,
 				2676B83325E5D26B003A911B /* DateManager.swift */,
 			);
@@ -343,20 +361,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26806D68262F567400142D8F /* PodcastTableViewController.swift in Sources */,
 				26BA0FBE2620D3ED002AF2DC /* Leader.swift in Sources */,
 				26D9387C2620EBB800D64873 /* OurLeadersDetailViewController.swift in Sources */,
 				2676B83125E5BF5A003A911B /* DetailViewController.swift in Sources */,
 				26BA0FB9261F9E73002AF2DC /* OurLeadersTableViewCell.swift in Sources */,
+				26806D65262F543C00142D8F /* PodcastTableViewCell.swift in Sources */,
 				2676B83425E5D26B003A911B /* DateManager.swift in Sources */,
 				26BA0FB5261F93DA002AF2DC /* OurLeadersViewController.swift in Sources */,
 				267C23D825D6FA32003FACFB /* AppDelegate.swift in Sources */,
 				26C68DEE260A714C007C5875 /* LiveDetailViewController.swift in Sources */,
+				26806D62262F534D00142D8F /* XML_Parser.swift in Sources */,
 				267C23DA25D6FA32003FACFB /* SceneDelegate.swift in Sources */,
 				267C240825DDA2D3003FACFB /* ConstantsTemplate.swift in Sources */,
 				2665A70C260EA6FD002BD7BF /* HomeViewController.swift in Sources */,
 				260B6DEB25ED6F34000FFFFF /* MediaOptionsViewController.swift in Sources */,
 				267C23FA25DC24DB003FACFB /* PlaylistModel.swift in Sources */,
 				260B6E0725F807EC000FFFFF /* LiveResponse.swift in Sources */,
+				26806D5F262E1CBA00142D8F /* VisionDetailViewController.swift in Sources */,
 				26D9388B2625F76E00D64873 /* TabBarController.swift in Sources */,
 				267C23EE25D71CEC003FACFB /* Constants.swift in Sources */,
 				2676B82D25E1A0A3003A911B /* CacheManager.swift in Sources */,
@@ -371,6 +393,8 @@
 				2640BD7925E04E2A00E70A1F /* VideoTableViewCell.swift in Sources */,
 				260B6DFA25F2CC19000FFFFF /* LiveVideoModel.swift in Sources */,
 				26D938852624B19600D64873 /* Ministry.swift in Sources */,
+				26806D5C262E161A00142D8F /* VisionViewController.swift in Sources */,
+				26B5312326308710000076DA /* PodcastDetailViewController.swift in Sources */,
 				26C68DEB260A6BC3007C5875 /* LiveVideoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

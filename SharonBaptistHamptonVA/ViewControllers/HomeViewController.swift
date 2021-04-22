@@ -22,19 +22,9 @@ class HomeViewController: UIViewController {
         setTitleViewImage()
     }
     
-    @IBAction func ourVisionButtonPressed(_ sender: Any) {
-        
-        if let url = NSURL(string: "https://www.sharonbaptisthamptonva.com/vision.html") {
-            UIApplication.shared.open(url as URL, options: [:], completionHandler:nil)
-        }
-    }
     
-    @IBAction func podcastButtonPressed(_ sender: Any) {
-        
-        if let url = NSURL(string: "https://www.sharonbaptisthamptonva.com/podcasts.html") {
-            UIApplication.shared.open(url as URL, options: [:], completionHandler:nil)
-        }
-    }
+    
+    
     
     @IBAction func contactUsButtonPressed(_ sender: Any) {
         
