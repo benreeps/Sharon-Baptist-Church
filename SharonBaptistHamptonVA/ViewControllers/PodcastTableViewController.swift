@@ -62,7 +62,9 @@ class PodcastTableViewController: UITableViewController {
             let podcastDetailViewController = segue.destination as! PodcastDetailViewController
             
             let index = rssItems?[tableView.indexPathForSelectedRow!.row]
+         //   let allRssItems = [rssItems]
             podcastDetailViewController.rssItem = index
+         //   podcastDetailViewController.rssItems = [allRssItems]
         }
     }
 

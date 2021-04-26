@@ -36,6 +36,7 @@
 		26806D65262F543C00142D8F /* PodcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806D64262F543C00142D8F /* PodcastTableViewCell.swift */; };
 		26806D68262F567400142D8F /* PodcastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806D67262F567400142D8F /* PodcastTableViewController.swift */; };
 		26B5312326308710000076DA /* PodcastDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B5312226308710000076DA /* PodcastDetailViewController.swift */; };
+		26B5312826332EA2000076DA /* TimeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B5312726332EA1000076DA /* TimeTracker.swift */; };
 		26BA0FB5261F93DA002AF2DC /* OurLeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA0FB4261F93DA002AF2DC /* OurLeadersViewController.swift */; };
 		26BA0FB9261F9E73002AF2DC /* OurLeadersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA0FB8261F9E73002AF2DC /* OurLeadersTableViewCell.swift */; };
 		26BA0FBE2620D3ED002AF2DC /* Leader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA0FBD2620D3ED002AF2DC /* Leader.swift */; };
@@ -80,6 +81,7 @@
 		26806D64262F543C00142D8F /* PodcastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTableViewCell.swift; sourceTree = "<group>"; };
 		26806D67262F567400142D8F /* PodcastTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTableViewController.swift; sourceTree = "<group>"; };
 		26B5312226308710000076DA /* PodcastDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetailViewController.swift; sourceTree = "<group>"; };
+		26B5312726332EA1000076DA /* TimeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTracker.swift; sourceTree = "<group>"; };
 		26BA0FB4261F93DA002AF2DC /* OurLeadersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurLeadersViewController.swift; sourceTree = "<group>"; };
 		26BA0FB8261F9E73002AF2DC /* OurLeadersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurLeadersTableViewCell.swift; sourceTree = "<group>"; };
 		26BA0FBD2620D3ED002AF2DC /* Leader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leader.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				26C68DEA260A6BC3007C5875 /* LiveVideoTableViewCell.swift */,
 				26BA0FB8261F9E73002AF2DC /* OurLeadersTableViewCell.swift */,
 				26806D64262F543C00142D8F /* PodcastTableViewCell.swift */,
+				26B5312726332EA1000076DA /* TimeTracker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				2676B82D25E1A0A3003A911B /* CacheManager.swift in Sources */,
 				26D938822624AC0300D64873 /* MinistriesTableViewCell.swift in Sources */,
 				26D938882625F1D900D64873 /* GiveViewController.swift in Sources */,
+				26B5312826332EA2000076DA /* TimeTracker.swift in Sources */,
 				267C23F725DC21E3003FACFB /* Video.swift in Sources */,
 				260B6DF225F15BFD000FFFFF /* LiveVideoViewController.swift in Sources */,
 				260B6DF725F2C679000FFFFF /* LiveVideo.swift in Sources */,

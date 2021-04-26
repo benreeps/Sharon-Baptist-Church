@@ -17,17 +17,26 @@ class PodcastDetailViewController: UIViewController {
     @IBOutlet weak var forwardButton: UIButton!
     @IBOutlet weak var forwardBackground: UIView!
     @IBOutlet weak var podcastImageView: UIImageView!
+    @IBOutlet weak var podcastTitleLabel: UILabel!
+    @IBOutlet weak var timeSlider: UISlider!
+    @IBOutlet weak var startTimeLabel: UILabel!
+    @IBOutlet weak var endTimeLable: UILabel!
     
     
     var rssItem: RSSItem!
+    var rssItems: [RSSItem]?
     var player: AVAudioPlayer?
+    var timer:Timer?
     
     
     var isPlaying = false {
         didSet {
             if isPlaying  {
+                 
                 playPauseButton.setImage(UIImage(named: "pause")!, for: .normal)
+                
                 player?.play()
+                
             } else {
                 playPauseButton.setImage(UIImage(named: "play")!, for: .normal)
                 player?.pause()
@@ -36,12 +45,18 @@ class PodcastDetailViewController: UIViewController {
     }
     
     
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let urlString = rssItem!.audioUrl
-        let url = NSURL(string: urlString)
+        guard let url = NSURL(string: urlString) else {
+            return
+        }
         
-        downloadFileFromURL(url: url!)
+        downloadFileFromURL(url: url)
         
         reverseBackground.layer.cornerRadius = 35.0
         reverseBackground.clipsToBounds = true
@@ -55,8 +70,65 @@ class PodcastDetailViewController: UIViewController {
         forwardBackground.clipsToBounds = true
         forwardBackground.alpha = 0.0
         
+        podcastImageView.layer.shadowColor = UIColor.black.cgColor
+        podcastImageView.layer.shadowOpacity = 1
+        podcastImageView.layer.shadowOffset = CGSize.zero
+        podcastImageView.layer.shadowRadius = 10
+       
+        podcastTitleLabel.text = rssItem.title
+      
+        
+        player?.pause()
+        timeSlider.setThumbImage(UIImage(named: "thumb"), for: .normal)
+        timeSlider.minimumValue = 00.00
+        
+        timeSlider.value = 0
+      
+        startTimeLabel.text = "00:00"
+        endTimeLable.text = "00:00"
+        
+        
+       
+      
+    }
+
+    
+    
+    @IBAction func forwardButtonPressed(_ sender: Any) {
+        
+        //let position = rssItems?[indexPathForSelectedRow!.row]
+        
     }
     
+    @IBAction func timeSliderValueChanged(_ sender: Any) {
+        let currentTimeSliderValue = timeSlider.value
+        player?.pause()
+        
+        if isPlaying == true {
+            player?.currentTime = TimeInterval(currentTimeSliderValue)
+            
+            if let currentTime = player?.currentTime {
+                startTimeLabel.text = "\(translateToHourMinSec(time: Float(currentTime)))"
+            }
+            
+            player?.play()
+        } else {
+            
+            player?.currentTime = TimeInterval(currentTimeSliderValue)
+            
+            if let currentTime = player?.currentTime {
+                startTimeLabel.text = "\(translateToHourMinSec(time: Float(currentTime)))"
+                
+            }
+            
+            player?.pause()
+            
+        }
+        
+        
+        
+        
+    }
     @IBAction func playPauseButtonTapped(_ sender: Any) {
         
         
@@ -72,6 +144,10 @@ class PodcastDetailViewController: UIViewController {
         }
         
         isPlaying = !isPlaying
+        
+        if player?.isPlaying != nil {
+            
+        }
     }
     @IBAction func touchedUpInside(_ sender: UIButton) {
         let buttonBackground: UIView
@@ -120,18 +196,75 @@ class PodcastDetailViewController: UIViewController {
     
     
     
-    
     func downloadFileFromURL(url:NSURL) {
         var downloadTask: URLSessionDownloadTask
         downloadTask = URLSession.shared.downloadTask(with: url as URL, completionHandler: {[weak self](URL, response, error) -> Void in self?.prepare(url: URL! as NSURL)
             
+            DispatchQueue.main.async {
+                self!.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self!, selector: #selector(self!.changeSliderValueToCurrentTime), userInfo: nil, repeats: true)
+                self!.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self!, selector: #selector(self!.changeStartEndTimeToCurrentTimeDuration), userInfo: nil, repeats: true)
+                
+                self!.timeSlider.maximumValue = Float(self!.player!.duration)
+                
+            }
+            
             if self!.isPlaying {
+                
                 self!.player?.play()
+                
             }
         })
         
         downloadTask.resume()
     }
+    
+    @objc func changeSliderValueToCurrentTime() {
+       
+        let currentTimeFloat = Float(player!.currentTime)
+       
+            timeSlider.value = currentTimeFloat
+        
+    }
+    
+    @objc func changeStartEndTimeToCurrentTimeDuration() {
+        
+        let currentTime = player!.currentTime
+        let duration = player!.duration
+        
+        
+        startTimeLabel.text = "\(translateToHourMinSec(time: Float(currentTime)))"
+        endTimeLable.text = "\(translateToHourMinSec(time: Float(duration)))"
+        
+    
+    }
+    
+    func translateToHourMinSec (time: Float) -> String  {
+        let allTime: Int = Int(time)
+        var hours = 0
+        var minutes = 0
+        var seconds = 0
+        var hoursText = ""
+        var minutesText = ""
+        var secondsText = ""
+        
+        hours = allTime / 3600
+        hoursText = hours > 9 ? "\(hours)": ""
+        
+        minutes = allTime % 3600 / 60
+        minutesText = minutes > 9 ? "\(minutes)" : "0\(minutes)"
+        
+        seconds = allTime % 3600 % 60
+        secondsText = seconds > 9 ? "\(seconds)" : "0\(seconds)"
+        
+        if hours <= 0 {
+            return "\(minutesText):\(secondsText)"
+        } else {
+            return "\(hoursText):\(minutesText):\(secondsText)"
+        }
+       
+    }
+    
+
     
     func prepare(url:NSURL) {
         
@@ -147,5 +280,8 @@ class PodcastDetailViewController: UIViewController {
     }
     
     
+    
 }
 
+    
+    
