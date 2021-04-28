@@ -1118,7 +1118,7 @@
         <!--Podcast Detail View Controller-->
         <scene sceneID="AHh-8f-xyu">
             <objects>
-                <viewController id="ylN-tz-7fZ" customClass="PodcastDetailViewController" customModule="SharonBaptistHamptonVA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="player" id="ylN-tz-7fZ" customClass="PodcastDetailViewController" customModule="SharonBaptistHamptonVA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YVs-f5-yRh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1171,6 +1171,7 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="reverse"/>
                                         <connections>
+                                            <action selector="reverseButtonPressed:" destination="ylN-tz-7fZ" eventType="touchUpInside" id="tHf-ni-kvb"/>
                                             <action selector="touchedDown:" destination="ylN-tz-7fZ" eventType="touchUpInside" id="izA-pc-vYH"/>
                                             <action selector="touchedUpInside:" destination="ylN-tz-7fZ" eventType="touchUpInside" id="CxZ-5l-4ac"/>
                                         </connections>

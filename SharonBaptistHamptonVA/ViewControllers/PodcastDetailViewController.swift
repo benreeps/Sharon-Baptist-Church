@@ -24,10 +24,10 @@ class PodcastDetailViewController: UIViewController {
     
     
     var rssItem: RSSItem!
-    var rssItems: [RSSItem]?
+    var allRssItems: [RSSItem]? = []
+    var position: Int = 0
     var player: AVAudioPlayer?
     var timer:Timer?
-    
     
     var isPlaying = false {
         didSet {
@@ -44,59 +44,27 @@ class PodcastDetailViewController: UIViewController {
         }
     }
     
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let urlString = rssItem!.audioUrl
-        guard let url = NSURL(string: urlString) else {
-            return
-        }
+        configure()
         
-        downloadFileFromURL(url: url)
-        
-        reverseBackground.layer.cornerRadius = 35.0
-        reverseBackground.clipsToBounds = true
-        reverseBackground.alpha = 0.0
-        
-        playPauseBackground.layer.cornerRadius = 35.0
-        playPauseBackground.clipsToBounds = true
-        playPauseBackground.alpha = 0.0
-        
-        forwardBackground.layer.cornerRadius = 35.0
-        forwardBackground.clipsToBounds = true
-        forwardBackground.alpha = 0.0
-        
-        podcastImageView.layer.shadowColor = UIColor.black.cgColor
-        podcastImageView.layer.shadowOpacity = 1
-        podcastImageView.layer.shadowOffset = CGSize.zero
-        podcastImageView.layer.shadowRadius = 10
-       
-        podcastTitleLabel.text = rssItem.title
-      
-        
-        player?.pause()
-        timeSlider.setThumbImage(UIImage(named: "thumb"), for: .normal)
-        timeSlider.minimumValue = 00.00
-        
-        timeSlider.value = 0
-      
-        startTimeLabel.text = "00:00"
-        endTimeLable.text = "00:00"
-        
-        
-       
-      
     }
 
     
+    @IBAction func reverseButtonPressed(_ sender: Any) {
+        if position > 0 {
+            position = position - 1
+            player?.stop()
+            configure()
+        }
+    }
     
     @IBAction func forwardButtonPressed(_ sender: Any) {
-        
-        //let position = rssItems?[indexPathForSelectedRow!.row]
+        if position < allRssItems!.count - 1 {
+            position = position + 1
+            player?.stop()
+            configure()
+        }
         
     }
     
@@ -216,6 +184,54 @@ class PodcastDetailViewController: UIViewController {
         })
         
         downloadTask.resume()
+    }
+    
+    func configure() {
+        
+        let rssItem = allRssItems![position]
+        
+        let urlString = rssItem.audioUrl
+        
+        
+        
+        guard let url = NSURL(string: urlString) else {
+            return
+        }
+        do {
+            
+            downloadFileFromURL(url: url)
+        }
+        
+        
+        reverseBackground.layer.cornerRadius = 35.0
+        reverseBackground.clipsToBounds = true
+        reverseBackground.alpha = 0.0
+        
+        playPauseBackground.layer.cornerRadius = 35.0
+        playPauseBackground.clipsToBounds = true
+        playPauseBackground.alpha = 0.0
+        
+        forwardBackground.layer.cornerRadius = 35.0
+        forwardBackground.clipsToBounds = true
+        forwardBackground.alpha = 0.0
+        
+        podcastImageView.layer.shadowColor = UIColor.black.cgColor
+        podcastImageView.layer.shadowOpacity = 1
+        podcastImageView.layer.shadowOffset = CGSize.zero
+        podcastImageView.layer.shadowRadius = 10
+       
+        podcastTitleLabel.text = rssItem.title
+      
+        
+        player?.pause()
+        timeSlider.setThumbImage(UIImage(named: "thumb"), for: .normal)
+        timeSlider.minimumValue = 00.00
+        
+        timeSlider.value = 0
+      
+        startTimeLabel.text = "00:00"
+        endTimeLable.text = "00:00"
+        
     }
     
     @objc func changeSliderValueToCurrentTime() {
