@@ -22,10 +22,6 @@ class HomeViewController: UIViewController {
         setTitleViewImage()
     }
     
-    
-    
-    
-    
     @IBAction func contactUsButtonPressed(_ sender: Any) {
         
         if let url = NSURL(string: "https://www.sharonbaptisthamptonva.com/contact-us.html") {
@@ -43,8 +39,6 @@ class HomeViewController: UIViewController {
         self.navigationController?.navigationBar.setTitleVerticalPositionAdjustment(-5.0, for: .default)
         
     }
-    
-    
 }
 
 

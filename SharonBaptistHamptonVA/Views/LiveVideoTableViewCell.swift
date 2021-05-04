@@ -58,7 +58,6 @@ class LiveVideoTableViewCell: UITableViewCell {
                 DispatchQueue.main.async {
                     self.thumbnailImageView.image = image
                 }
-                
             }
         }
         dataTask.resume()

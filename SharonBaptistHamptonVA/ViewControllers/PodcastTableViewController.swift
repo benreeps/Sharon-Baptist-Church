@@ -8,19 +8,15 @@
 import UIKit
 
 class PodcastTableViewController: UITableViewController {
-
+    
     private var rssItems: [RSSItem]?
     var allRssItems: [RSSItem]? = []
     var itemArray: [RSSItem]? = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       fetchData()
         
-        
-       
-        
+        fetchData()
     }
     
     private func fetchData() {
@@ -29,34 +25,28 @@ class PodcastTableViewController: UITableViewController {
             self.rssItems = rssItems
             self.allRssItems = rssItems
             
-            
-            
             OperationQueue.main.addOperation {
                 self.tableView.reloadSections(IndexSet(integer: 0), with: .left)
             }
-            
         }
-        
-      
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         guard let rssItems = rssItems else {
             return 0
         }
         
-      
         return rssItems.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PodcastCell", for: indexPath) as! PodcastTableViewCell
@@ -77,41 +67,25 @@ class PodcastTableViewController: UITableViewController {
         vc.position = position
         vc.allRssItems = allRssItems
         
-        present(vc, animated: true)
+        //present(vc, animated: true)
     }
     
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PodcastDetailSegue" {
             let podcastDetailViewController = segue.destination as! PodcastDetailViewController
             
             let index = rssItems?[tableView.indexPathForSelectedRow!.row]
-     
+            
             for item in allRssItems! {
                 if ((rssItems?[tableView.indexPathForSelectedRow!.row] = item) != nil) {
                     itemArray!.append(item)
                 }
-                    
             }
-            
             
             podcastDetailViewController.allRssItems = self.allRssItems
             podcastDetailViewController.rssItem = index
         }
-            
-            
-        }
-    
-    
-    
-    
-        
-        
-        
-        
-    
-    
-
+    }
 }
 extension Int: Sequence {
     public func makeIterator() -> CountableRange<Int>.Iterator {

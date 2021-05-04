@@ -28,11 +28,10 @@ class PodcastDetailViewController: UIViewController {
     var position: Int = 0
     var player: AVAudioPlayer?
     var timer:Timer?
-    
     var isPlaying = false {
         didSet {
             if isPlaying  {
-                 
+                
                 playPauseButton.setImage(UIImage(named: "pause")!, for: .normal)
                 
                 player?.play()
@@ -49,7 +48,7 @@ class PodcastDetailViewController: UIViewController {
         configure()
         
     }
-
+    
     
     @IBAction func reverseButtonPressed(_ sender: Any) {
         if position > 0 {
@@ -58,7 +57,6 @@ class PodcastDetailViewController: UIViewController {
             configure()
         }
     }
-    
     @IBAction func forwardButtonPressed(_ sender: Any) {
         if position < allRssItems!.count - 1 {
             position = position + 1
@@ -67,7 +65,6 @@ class PodcastDetailViewController: UIViewController {
         }
         
     }
-    
     @IBAction func timeSliderValueChanged(_ sender: Any) {
         let currentTimeSliderValue = timeSlider.value
         player?.pause()
@@ -88,17 +85,10 @@ class PodcastDetailViewController: UIViewController {
                 startTimeLabel.text = "\(translateToHourMinSec(time: Float(currentTime)))"
                 
             }
-            
             player?.pause()
-            
         }
-        
-        
-        
-        
     }
     @IBAction func playPauseButtonTapped(_ sender: Any) {
-        
         
         if isPlaying {
             UIView.animate(withDuration: 0.5) {
@@ -113,9 +103,6 @@ class PodcastDetailViewController: UIViewController {
         
         isPlaying = !isPlaying
         
-        if player?.isPlaying != nil {
-            
-        }
     }
     @IBAction func touchedUpInside(_ sender: UIButton) {
         let buttonBackground: UIView
@@ -123,11 +110,22 @@ class PodcastDetailViewController: UIViewController {
         switch sender {
         
         case reverseButton:
+            DispatchQueue.main.async {
+                self.timeSlider.value = 0
+                self.startTimeLabel.text = "00:00"
+            }
             buttonBackground = reverseBackground
+            
         case playPauseButton:
             buttonBackground = playPauseBackground
+            
         case forwardButton:
+            
             buttonBackground = forwardBackground
+            DispatchQueue.main.async {
+                self.timeSlider.value = 0
+                self.startTimeLabel.text = "00:00"
+            }
         default:
             return
         }
@@ -160,26 +158,25 @@ class PodcastDetailViewController: UIViewController {
         
     }
     
-    
-    
-    
-    
     func downloadFileFromURL(url:NSURL) {
         var downloadTask: URLSessionDownloadTask
         downloadTask = URLSession.shared.downloadTask(with: url as URL, completionHandler: {[weak self](URL, response, error) -> Void in self?.prepare(url: URL! as NSURL)
             
             DispatchQueue.main.async {
-                self!.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self!, selector: #selector(self!.changeSliderValueToCurrentTime), userInfo: nil, repeats: true)
-                self!.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self!, selector: #selector(self!.changeStartEndTimeToCurrentTimeDuration), userInfo: nil, repeats: true)
-                
-                self!.timeSlider.maximumValue = Float(self!.player!.duration)
+                // self!.player!.play(atTime: TimeInterval(0))
+                //self!.player!.pause()
+                self?.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self!, selector: #selector(self!.changeSliderValueToCurrentTime), userInfo: nil, repeats: true)
+                self?.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self!, selector: #selector(self!.changeStartEndTimeToCurrentTimeDuration), userInfo: nil, repeats: true)
+                self?.timeSlider.maximumValue = Float(self!.player!.duration)
                 
             }
             
-            if self!.isPlaying {
+            if (self?.isPlaying == false) {
                 
-                self!.player?.play()
+                self!.player?.pause()
                 
+            } else {
+                self?.player?.play()
             }
         })
         
@@ -189,57 +186,52 @@ class PodcastDetailViewController: UIViewController {
     func configure() {
         
         let rssItem = allRssItems![position]
-        
         let urlString = rssItem.audioUrl
         
-        
-        
-        guard let url = NSURL(string: urlString) else {
-            return
-        }
-        do {
+        DispatchQueue.main.async {
+            guard let url = NSURL(string: urlString) else {
+                return
+            }
+            do {
+                self.timeSlider.value = 0
+                self.endTimeLable.text = "00:00"
+                self.startTimeLabel.text = "00:00"
+                self.downloadFileFromURL(url: url)
+            }
             
-            downloadFileFromURL(url: url)
+            self.reverseBackground.layer.cornerRadius = 35.0
+            self.reverseBackground.clipsToBounds = true
+            self.reverseBackground.alpha = 0.0
+            
+            self.playPauseBackground.layer.cornerRadius = 35.0
+            self.playPauseBackground.clipsToBounds = true
+            self.playPauseBackground.alpha = 0.0
+            
+            self.forwardBackground.layer.cornerRadius = 35.0
+            self.forwardBackground.clipsToBounds = true
+            self.forwardBackground.alpha = 0.0
+            
+            self.podcastImageView.layer.shadowColor = UIColor.black.cgColor
+            self.podcastImageView.layer.shadowOpacity = 1
+            self.podcastImageView.layer.shadowOffset = CGSize.zero
+            self.podcastImageView.layer.shadowRadius = 10
+            
+            self.podcastTitleLabel.text = rssItem.title
+            
+            //player?.pause()
+            self.timeSlider.setThumbImage(UIImage(named: "thumb"), for: .normal)
+            self.timeSlider.minimumValue = 00.00
+            
+            UIView.animate(withDuration: 0.5) {
+                self.podcastImageView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+            }
         }
-        
-        
-        reverseBackground.layer.cornerRadius = 35.0
-        reverseBackground.clipsToBounds = true
-        reverseBackground.alpha = 0.0
-        
-        playPauseBackground.layer.cornerRadius = 35.0
-        playPauseBackground.clipsToBounds = true
-        playPauseBackground.alpha = 0.0
-        
-        forwardBackground.layer.cornerRadius = 35.0
-        forwardBackground.clipsToBounds = true
-        forwardBackground.alpha = 0.0
-        
-        podcastImageView.layer.shadowColor = UIColor.black.cgColor
-        podcastImageView.layer.shadowOpacity = 1
-        podcastImageView.layer.shadowOffset = CGSize.zero
-        podcastImageView.layer.shadowRadius = 10
-       
-        podcastTitleLabel.text = rssItem.title
-      
-        
-        player?.pause()
-        timeSlider.setThumbImage(UIImage(named: "thumb"), for: .normal)
-        timeSlider.minimumValue = 00.00
-        
-        timeSlider.value = 0
-      
-        startTimeLabel.text = "00:00"
-        endTimeLable.text = "00:00"
-        
     }
     
     @objc func changeSliderValueToCurrentTime() {
-       
-        let currentTimeFloat = Float(player!.currentTime)
-       
-            timeSlider.value = currentTimeFloat
         
+        let currentTimeFloat = Float(player!.currentTime)
+        timeSlider.value = currentTimeFloat
     }
     
     @objc func changeStartEndTimeToCurrentTimeDuration() {
@@ -247,11 +239,8 @@ class PodcastDetailViewController: UIViewController {
         let currentTime = player!.currentTime
         let duration = player!.duration
         
-        
         startTimeLabel.text = "\(translateToHourMinSec(time: Float(currentTime)))"
         endTimeLable.text = "\(translateToHourMinSec(time: Float(duration)))"
-        
-    
     }
     
     func translateToHourMinSec (time: Float) -> String  {
@@ -277,10 +266,7 @@ class PodcastDetailViewController: UIViewController {
         } else {
             return "\(hoursText):\(minutesText):\(secondsText)"
         }
-       
     }
-    
-
     
     func prepare(url:NSURL) {
         
@@ -294,10 +280,7 @@ class PodcastDetailViewController: UIViewController {
             print("AVAudioPlayer init failed")
         }
     }
-    
-    
-    
 }
 
-    
-    
+
+

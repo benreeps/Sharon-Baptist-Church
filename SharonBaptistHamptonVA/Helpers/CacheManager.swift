@@ -22,5 +22,4 @@ class CacheManager {
         return cache[url]
         
     }
-    
 }

@@ -39,7 +39,6 @@ class LiveVideoModel {
                 decoder.dateDecodingStrategy = .iso8601
                 
                 // Specify the type of data you want to decode the data into
-                
                 let liveResponse = try decoder.decode(LiveResponse.self, from: data!)
                 
                 if liveResponse.items != nil {
@@ -47,9 +46,7 @@ class LiveVideoModel {
                     DispatchQueue.main.async {
                         self.delegate?.liveVideosFetched(liveResponse.items!)
                     }
-                    
                 }
-                
                 dump(liveResponse)
             }
             catch {
@@ -58,5 +55,4 @@ class LiveVideoModel {
         }
         dataTask.resume()
     }
-    
 }

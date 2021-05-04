@@ -95,8 +95,6 @@ class FeedParser: NSObject, XMLParserDelegate {
             self.rssItems.append(rssItem)
             
         }
-        
-        
     }
     
     func parserDidEndDocument(_ parser: XMLParser) {

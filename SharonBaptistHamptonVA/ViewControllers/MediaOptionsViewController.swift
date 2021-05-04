@@ -21,5 +21,4 @@ class MediaOptionsViewController: UIViewController {
         allSermonsButton.layer.cornerRadius = 10
         allSermonsButton.layer.cornerRadius = 10
     }
-    
 }

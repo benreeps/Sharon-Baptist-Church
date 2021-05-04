@@ -12,6 +12,8 @@ class VisionViewController: UIViewController {
     @IBOutlet weak var view1: UIView!
     @IBOutlet weak var view2: UIView!
     
+    let video1Id = "xLrfhsGOOyQ"
+    let video2Id = "pjaN1YWxVn8"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,15 +22,25 @@ class VisionViewController: UIViewController {
         view2.layer.cornerRadius = 10 
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        // Confirm that a video was selected
+        guard let visionDetailVC = segue.destination as? VisionDetailViewController else {
+            return
+        }
+        
+        if (segue.identifier == "video1") {
+            
+            // Set the video property of the detail view controller
+            visionDetailVC.videoId = video1Id
+            
+        } else if (segue.identifier == "video2") {
+            visionDetailVC.videoId = video2Id
+            
+        }
     }
-    */
-
 }
+    
+  
+
+

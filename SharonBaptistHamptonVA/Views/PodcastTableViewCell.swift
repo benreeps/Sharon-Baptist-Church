@@ -15,7 +15,6 @@ class PodcastTableViewCell: UITableViewCell {
     var item: RSSItem! {
         didSet {
             titleLabel.text = item.title
-            
             podcastImage.image = UIImage(named: "BeInPrayerLogo")
             podcastImage.maskCircle(anyImage: podcastImage.image!)
         }

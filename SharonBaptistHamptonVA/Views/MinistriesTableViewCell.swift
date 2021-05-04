@@ -16,7 +16,6 @@ class MinistriesTableViewCell: UITableViewCell {
         
         ministryImageView.image = ministry.image
         ministryImageView.maskCircle(anyImage: ministryImageView.image!)
-        
         ministryTitleLabel.text = ministry.title
         
     }

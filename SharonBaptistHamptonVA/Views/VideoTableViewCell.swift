@@ -11,7 +11,7 @@ class VideoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
+   // @IBOutlet weak var dateLabel: UILabel!
     
     var video:Video?
     
@@ -24,9 +24,6 @@ class VideoTableViewCell: UITableViewCell {
         self.titleLabel.text = video?.title
         
         thumbnailImageView.layer.cornerRadius = 10.00
-        
-        // Format the video.date into a string
-        updateVideoDateFormat(date: video!.published)
         
         // Set the thumbnail
         guard self.video!.thumbnail != "" else {return}
@@ -58,14 +55,8 @@ class VideoTableViewCell: UITableViewCell {
                 DispatchQueue.main.async {
                     self.thumbnailImageView.image = image
                 }
-                
             }
         }
         dataTask.resume()
     }
-    
-    func updateVideoDateFormat(date: Date) {
-        self.dateLabel.text = DateManager.videoDateFormatter.string(from: date)
-    }
-    
 }

@@ -115,11 +115,11 @@
 			isa = PBXGroup;
 			children = (
 				267C240B25DDD8AA003FACFB /* PlaylistViewController.swift */,
+				2676B83025E5BF5A003A911B /* DetailViewController.swift */,
 				260B6DF125F15BFD000FFFFF /* LiveVideoViewController.swift */,
 				26BA0FB4261F93DA002AF2DC /* OurLeadersViewController.swift */,
 				26D9387B2620EBB800D64873 /* OurLeadersDetailViewController.swift */,
 				26D9387E2624AB8500D64873 /* MinistriesViewController.swift */,
-				2676B83025E5BF5A003A911B /* DetailViewController.swift */,
 				26C68DED260A714C007C5875 /* LiveDetailViewController.swift */,
 				26806D67262F567400142D8F /* PodcastTableViewController.swift */,
 				26B5312226308710000076DA /* PodcastDetailViewController.swift */,
@@ -558,7 +558,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Ben-Reeps.SharonBaptistHamptonVA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -579,7 +579,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Ben-Reeps.SharonBaptistHamptonVA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

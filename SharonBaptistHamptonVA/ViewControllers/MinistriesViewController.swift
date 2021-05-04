@@ -16,10 +16,14 @@ class MinistriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
+
+            tableView.delegate = self
+            tableView.dataSource = self
+          
+            ministries = self.createMinistryArray()
         
-        ministries = createMinistryArray()
+        
+        
     }
     
     func createMinistryArray() -> [Ministry] {
@@ -83,9 +87,6 @@ extension MinistriesViewController: UITableViewDelegate, UITableViewDataSource{
         
         if let indexPath = tableView.indexPathForSelectedRow {
             tableView.deselectRow(at: indexPath, animated: true)}
-        
-    }
-    
-    
+    } 
 }
 
