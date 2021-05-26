@@ -21,8 +21,9 @@ class PodcastDetailViewController: UIViewController {
     @IBOutlet weak var timeSlider: UISlider!
     @IBOutlet weak var startTimeLabel: UILabel!
     @IBOutlet weak var endTimeLable: UILabel!
+    @IBOutlet weak var shareButton: UIButton!
     
-    
+    var currentUrlString: String = ""
     var rssItem: RSSItem!
     var allRssItems: [RSSItem]? = []
     var position: Int = 0
@@ -46,6 +47,18 @@ class PodcastDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
+        let currentRssItem = allRssItems![position]
+         currentUrlString = currentRssItem.audioUrl
+        do {
+            let aduioSession = AVAudioSession.sharedInstance()
+            
+            do {
+                try aduioSession.setCategory(AVAudioSession.Category.playback)
+            }
+            catch {
+                print(error)
+            }
+        }
         
     }
     
@@ -157,6 +170,13 @@ class PodcastDetailViewController: UIViewController {
         }
         
     }
+    @IBAction func shareButtonPressed(_ sender: UIButton) {
+        let items: [Any] = ["\(podcastTitleLabel.text ?? "")", URL(string: "\(currentUrlString )")!]
+        let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        present(ac, animated: true)
+    }
+    
+    
     
     func downloadFileFromURL(url:NSURL) {
         var downloadTask: URLSessionDownloadTask
