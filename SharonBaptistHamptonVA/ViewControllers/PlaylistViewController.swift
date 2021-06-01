@@ -11,9 +11,12 @@ import UIKit
 class PlaylistViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, PlaylistModelDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+  
+    
     
     let playlistModel = PlaylistModel()
     var videos = [Video]()
+    var video: Video?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +29,9 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
         playlistModel.delegate = self
         
         playlistModel.getVideos()
+        
     }
-    
+
     //MARK:- Model Delegate Methods
     
     func videosFetched(_ videos: [Video]) {
@@ -54,6 +58,8 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
         let video = self.videos[indexPath.row]
         cell.setCell(video)
         
+        
+       
         return cell 
     }
     

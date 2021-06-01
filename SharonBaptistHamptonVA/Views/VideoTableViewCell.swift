@@ -11,6 +11,8 @@ class VideoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var shareButton: UIButton!
+    
    // @IBOutlet weak var dateLabel: UILabel!
     
     var video:Video?
@@ -59,4 +61,5 @@ class VideoTableViewCell: UITableViewCell {
         }
         dataTask.resume()
     }
+    
 }

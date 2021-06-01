@@ -13,6 +13,7 @@ class LiveVideoTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var thumbnailImageView: UIImageView!
     
+    
     var liveVideo:LiveVideo?
     
     func setCell(_ v:LiveVideo) {

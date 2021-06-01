@@ -14,7 +14,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var youtubePlayerView: YTPlayerView!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var shareButton: UIButton!
     
+    let currentUrlString = Constants.VIDEO_ID_URL
+    var currentUrl: String = " "
     var video: Video?
     
     override func viewDidLoad() {
@@ -30,7 +33,7 @@ class DetailViewController: UIViewController {
         
         // Check if there is a video
         guard video != nil else {return}
-        
+        print("\(video!.videoId)")
         youtubePlayerView.load(withVideoId: video!.videoId)
         
         // Set the title
@@ -38,6 +41,17 @@ class DetailViewController: UIViewController {
         
         // Set the description
         textView.text = video!.description
+        currentUrl = currentUrlString + video!.videoId
     }
+    @IBAction func shareButtonPressed(_ sender: UIButton) {
+        if currentUrl != " "{
+            let items: [Any] = [URL(string: "\(currentUrl)")!]
+            let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
+            present(ac, animated: true)
+        } else {
+            return
+        }
+    }
+    
     
 }

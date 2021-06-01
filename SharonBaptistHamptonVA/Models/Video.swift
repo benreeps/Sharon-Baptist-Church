@@ -47,7 +47,7 @@ struct Video: Decodable {
         let resourceIdContainer = try snippetContainer.nestedContainer(keyedBy: CodingKeys.self, forKey: .resourceId)
         
         self.videoId = try resourceIdContainer.decode(String.self, forKey: .videoId)
-        
+       
     }
     
 }
