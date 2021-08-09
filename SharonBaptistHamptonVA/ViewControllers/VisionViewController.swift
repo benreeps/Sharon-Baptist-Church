@@ -26,6 +26,7 @@ class VisionViewController: UIViewController {
         
         // Confirm that a video was selected
         guard let visionDetailVC = segue.destination as? VisionDetailViewController else {
+            
             return
         }
         
@@ -35,8 +36,8 @@ class VisionViewController: UIViewController {
             visionDetailVC.videoId = video1Id
             
         } else if (segue.identifier == "video2") {
-            visionDetailVC.videoId = video2Id
             
+            visionDetailVC.videoId = video2Id
         }
     }
 }

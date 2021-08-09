@@ -20,7 +20,9 @@ class VisionDetailViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         DispatchQueue.main.async {
+            
             self.youtubePlayerView.load(withVideoId: self.videoId)
         }   
     }

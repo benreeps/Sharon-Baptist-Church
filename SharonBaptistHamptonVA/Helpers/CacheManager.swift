@@ -14,12 +14,10 @@ class CacheManager {
     static func setVideoCache(_ url: String, _ data: Data?) {
         
         cache[url] = data
-        
     }
     
     static func getVideoCache(_ url: String) -> Data? {
         
         return cache[url]
-        
     }
 }

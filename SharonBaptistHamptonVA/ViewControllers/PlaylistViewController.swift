@@ -11,8 +11,6 @@ import UIKit
 class PlaylistViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, PlaylistModelDelegate {
     
     @IBOutlet weak var tableView: UITableView!
-  
-    
     
     let playlistModel = PlaylistModel()
     var videos = [Video]()
@@ -29,7 +27,6 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
         playlistModel.delegate = self
         
         playlistModel.getVideos()
-        
     }
 
     //MARK:- Model Delegate Methods
@@ -54,12 +51,9 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEOCELL_ID, for: indexPath) as! VideoTableViewCell
-        
         let video = self.videos[indexPath.row]
         cell.setCell(video)
         
-        
-       
         return cell 
     }
     

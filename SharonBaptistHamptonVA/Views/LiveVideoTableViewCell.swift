@@ -51,20 +51,24 @@ class LiveVideoTableViewCell: UITableViewCell {
                 CacheManager.setVideoCache(url!.absoluteString, data)
                 
                 if url!.absoluteString != self.liveVideo?.thumbnail {
+                    
                     return
                 }
                 
                 let image = UIImage(data: data!)
                 
                 DispatchQueue.main.async {
+                    
                     self.thumbnailImageView.image = image
                 }
             }
         }
+        
         dataTask.resume()
     }
     
     func updateVideoDateFormat(date: Date) {
+        
         self.dateLabel.text = DateManager.videoDateFormatter.string(from: date)
     }
     

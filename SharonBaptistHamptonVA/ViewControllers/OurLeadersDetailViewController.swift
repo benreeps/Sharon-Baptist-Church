@@ -14,7 +14,6 @@ class OurLeadersDetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
     
-    
     var leader: Leader!
     
     override func viewDidLoad() {

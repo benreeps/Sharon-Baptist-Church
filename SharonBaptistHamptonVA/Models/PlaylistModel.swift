@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 protocol PlaylistModelDelegate {
+    
     func videosFetched(_ videos: [Video])
 }
 
@@ -19,6 +20,7 @@ class PlaylistModel {
     func getVideos() {
         
         let url = URL(string: Constants.API_URL)
+        
         guard url != nil else {return}
         
         // Get a URLSession object
@@ -29,6 +31,7 @@ class PlaylistModel {
             
             // Check for errors
             if error != nil || data == nil {
+                
                 return
             }
             
@@ -45,17 +48,21 @@ class PlaylistModel {
                 if response.items != nil {
                     
                     DispatchQueue.main.async {
+                        
                         self.delegate?.videosFetched(response.items!)
                     }
                 }
+                
                 dump(response)
             }
+            
             catch {
+                
                 print("decoding error")
                 
             }
         }
+        
         dataTask.resume() 
     }
-    
 }

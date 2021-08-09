@@ -8,6 +8,7 @@
 import Foundation
 
 protocol LiveVideoModelDelegate {
+    
     func liveVideosFetched(_ liveVideos: [LiveVideo])
 }
 
@@ -28,10 +29,12 @@ class LiveVideoModel {
             
             // Check for errors
             if error != nil || data == nil {
+                
                 return
             }
             
             do {
+                
                 // Parse the data into video objects
                 let decoder = JSONDecoder()
                 
@@ -44,15 +47,19 @@ class LiveVideoModel {
                 if liveResponse.items != nil {
                     
                     DispatchQueue.main.async {
+                        
                         self.delegate?.liveVideosFetched(liveResponse.items!)
                     }
                 }
+                
                 dump(liveResponse)
             }
+            
             catch {
                 
             }
         }
+        
         dataTask.resume()
     }
 }

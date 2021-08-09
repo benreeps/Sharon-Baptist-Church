@@ -17,12 +17,13 @@ class MinistriesTableViewCell: UITableViewCell {
         ministryImageView.image = ministry.image
         ministryImageView.maskCircle(anyImage: ministryImageView.image!)
         ministryTitleLabel.text = ministry.title
-        
     }
 }
 
 extension UIImageView {
+    
     public func maskCircle(anyImage: UIImage) {
+        
         self.contentMode = UIView.ContentMode.scaleAspectFill
         self.layer.cornerRadius = self.frame.height / 2
         self.layer.masksToBounds = false

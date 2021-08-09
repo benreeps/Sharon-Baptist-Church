@@ -66,13 +66,14 @@ extension MinistriesViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         // #warning Incomplete implementation, return the number of rows
         return ministries.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let ministry = ministries[indexPath.row]
         
+        let ministry = ministries[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "MinistryTableViewCell") as! MinistriesTableViewCell
         
         cell.setMinistry(ministry: ministry)
@@ -81,6 +82,7 @@ extension MinistriesViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let ministry = ministries[indexPath.row]
         let url = ministry.url
         UIApplication.shared.open(url as URL, options: [:], completionHandler:nil)

@@ -37,6 +37,8 @@
 		26806D68262F567400142D8F /* PodcastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806D67262F567400142D8F /* PodcastTableViewController.swift */; };
 		26B5312326308710000076DA /* PodcastDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B5312226308710000076DA /* PodcastDetailViewController.swift */; };
 		26B5312826332EA2000076DA /* TimeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B5312726332EA1000076DA /* TimeTracker.swift */; };
+		26B91F2C26B8734000127AC9 /* MKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B91F2B26B8734000127AC9 /* MKViewController.swift */; };
+		26B91F2E26B9FB7200127AC9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B91F2D26B9FB7200127AC9 /* MapKit.framework */; };
 		26BA0FB5261F93DA002AF2DC /* OurLeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA0FB4261F93DA002AF2DC /* OurLeadersViewController.swift */; };
 		26BA0FB9261F9E73002AF2DC /* OurLeadersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA0FB8261F9E73002AF2DC /* OurLeadersTableViewCell.swift */; };
 		26BA0FBE2620D3ED002AF2DC /* Leader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA0FBD2620D3ED002AF2DC /* Leader.swift */; };
@@ -46,7 +48,6 @@
 		26D9387F2624AB8600D64873 /* MinistriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9387E2624AB8500D64873 /* MinistriesViewController.swift */; };
 		26D938822624AC0300D64873 /* MinistriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D938812624AC0300D64873 /* MinistriesTableViewCell.swift */; };
 		26D938852624B19600D64873 /* Ministry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D938842624B19600D64873 /* Ministry.swift */; };
-		26D938882625F1D900D64873 /* GiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D938872625F1D800D64873 /* GiveViewController.swift */; };
 		26D9388B2625F76E00D64873 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9388A2625F76D00D64873 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,8 @@
 		26806D67262F567400142D8F /* PodcastTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTableViewController.swift; sourceTree = "<group>"; };
 		26B5312226308710000076DA /* PodcastDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetailViewController.swift; sourceTree = "<group>"; };
 		26B5312726332EA1000076DA /* TimeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTracker.swift; sourceTree = "<group>"; };
+		26B91F2B26B8734000127AC9 /* MKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKViewController.swift; sourceTree = "<group>"; };
+		26B91F2D26B9FB7200127AC9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		26BA0FB4261F93DA002AF2DC /* OurLeadersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurLeadersViewController.swift; sourceTree = "<group>"; };
 		26BA0FB8261F9E73002AF2DC /* OurLeadersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurLeadersTableViewCell.swift; sourceTree = "<group>"; };
 		26BA0FBD2620D3ED002AF2DC /* Leader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leader.swift; sourceTree = "<group>"; };
@@ -91,7 +94,6 @@
 		26D9387E2624AB8500D64873 /* MinistriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistriesViewController.swift; sourceTree = "<group>"; };
 		26D938812624AC0300D64873 /* MinistriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistriesTableViewCell.swift; sourceTree = "<group>"; };
 		26D938842624B19600D64873 /* Ministry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ministry.swift; sourceTree = "<group>"; };
-		26D938872625F1D800D64873 /* GiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveViewController.swift; sourceTree = "<group>"; };
 		26D9388A2625F76D00D64873 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9B0CD70DDA28B270993666C8 /* Pods_SharonBaptistHamptonVA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharonBaptistHamptonVA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2DC51D3E8668F506943FF05 /* Pods-SharonBaptistHamptonVA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharonBaptistHamptonVA.release.xcconfig"; path = "Target Support Files/Pods-SharonBaptistHamptonVA/Pods-SharonBaptistHamptonVA.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2676B83825E6CD1F003A911B /* WebKit.framework in Frameworks */,
+				26B91F2E26B9FB7200127AC9 /* MapKit.framework in Frameworks */,
 				108695B9226BD248805ED7E0 /* Pods_SharonBaptistHamptonVA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,7 +131,7 @@
 				2665A70B260EA6FD002BD7BF /* HomeViewController.swift */,
 				260B6DEA25ED6F34000FFFFF /* MediaOptionsViewController.swift */,
 				26D9388A2625F76D00D64873 /* TabBarController.swift */,
-				26D938872625F1D800D64873 /* GiveViewController.swift */,
+				26B91F2B26B8734000127AC9 /* MKViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 		2676B83625E6CD1F003A911B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26B91F2D26B9FB7200127AC9 /* MapKit.framework */,
 				2676B83725E6CD1F003A911B /* WebKit.framework */,
 				9B0CD70DDA28B270993666C8 /* Pods_SharonBaptistHamptonVA.framework */,
 			);
@@ -364,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B91F2C26B8734000127AC9 /* MKViewController.swift in Sources */,
 				26806D68262F567400142D8F /* PodcastTableViewController.swift in Sources */,
 				26BA0FBE2620D3ED002AF2DC /* Leader.swift in Sources */,
 				26D9387C2620EBB800D64873 /* OurLeadersDetailViewController.swift in Sources */,
@@ -386,7 +391,6 @@
 				267C23EE25D71CEC003FACFB /* Constants.swift in Sources */,
 				2676B82D25E1A0A3003A911B /* CacheManager.swift in Sources */,
 				26D938822624AC0300D64873 /* MinistriesTableViewCell.swift in Sources */,
-				26D938882625F1D900D64873 /* GiveViewController.swift in Sources */,
 				26B5312826332EA2000076DA /* TimeTracker.swift in Sources */,
 				267C23F725DC21E3003FACFB /* Video.swift in Sources */,
 				260B6DF225F15BFD000FFFFF /* LiveVideoViewController.swift in Sources */,
@@ -548,7 +552,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 8T82Y44ZA6;
 				INFOPLIST_FILE = SharonBaptistHamptonVA/Assets/Info.plist;
@@ -556,6 +560,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Ben-Reeps.SharonBaptistHamptonVA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -570,7 +575,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 8T82Y44ZA6;
 				INFOPLIST_FILE = SharonBaptistHamptonVA/Assets/Info.plist;
@@ -578,6 +583,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Ben-Reeps.SharonBaptistHamptonVA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

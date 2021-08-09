@@ -33,9 +33,7 @@ class LiveVideoViewController: UIViewController, UITableViewDataSource, UITableV
         DispatchQueue.main.async {
             
             self.liveVideos = liveVideos
-            
             self.tableView.reloadData()
-            
         }
     }
     
@@ -48,7 +46,6 @@ class LiveVideoViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.LIVEVIDEOCELL_ID, for: indexPath) as! LiveVideoTableViewCell
-        
         let liveVideo = self.liveVideos[indexPath.row]
         cell.setCell(liveVideo)
         

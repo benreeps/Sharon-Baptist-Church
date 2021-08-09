@@ -34,11 +34,13 @@ class PodcastTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
+        
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         // #warning Incomplete implementation, return the number of rows
         guard let rssItems = rssItems else {
             return 0
@@ -49,6 +51,7 @@ class PodcastTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "PodcastCell", for: indexPath) as! PodcastTableViewCell
         
         if let item = rssItems?[indexPath.item] {
@@ -58,26 +61,30 @@ class PodcastTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         tableView.deselectRow(at: indexPath, animated: true)
         let position = indexPath.row
         
         guard let vc = storyboard?.instantiateViewController(identifier: "player") as? PodcastDetailViewController else {
+            
             return
         }
+        
         vc.position = position
         vc.allRssItems = allRssItems
-        
-        //present(vc, animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "PodcastDetailSegue" {
             let podcastDetailViewController = segue.destination as! PodcastDetailViewController
             
             let index = rssItems?[tableView.indexPathForSelectedRow!.row]
             
             for item in allRssItems! {
+                
                 if ((rssItems?[tableView.indexPathForSelectedRow!.row] = item) != nil) {
+                    
                     itemArray!.append(item)
                 }
             }
@@ -87,8 +94,11 @@ class PodcastTableViewController: UITableViewController {
         }
     }
 }
+
 extension Int: Sequence {
+    
     public func makeIterator() -> CountableRange<Int>.Iterator {
+        
         return (0..<self).makeIterator()
     }
 }

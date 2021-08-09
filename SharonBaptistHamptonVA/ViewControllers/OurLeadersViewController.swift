@@ -38,9 +38,12 @@ class OurLeadersViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "LeaderDetailSegue" {
+            
             let ourLeadersDetailViewController = segue.destination as! OurLeadersDetailViewController
             let index = tableView.indexPathForSelectedRow!.row
+            
             ourLeadersDetailViewController.leader = leaders[index]
         }
     }
@@ -56,13 +59,14 @@ extension OurLeadersViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         // #warning Incomplete implementation, return the number of rows
         return leaders.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let leader = leaders[indexPath.row]
         
+        let leader = leaders[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "leaderTableViewCell") as! OurLeadersTableViewCell
         
         cell.setLeader(leader: leader)
@@ -70,7 +74,10 @@ extension OurLeadersViewController: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+                if let indexPath = tableView.indexPathForSelectedRow { tableView.deselectRow(at: indexPath, animated: true) }
+    }
 }
 
 

@@ -18,6 +18,7 @@ class Leader {
     let leaderSpouseName: String
     
     init(title: String, name: String,description: String, image: UIImage, spouseImage: UIImage, leaderSpouseName: String) {
+        
         self.title = title
         self.name = name
         self.image = image

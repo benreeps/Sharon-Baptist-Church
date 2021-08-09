@@ -16,6 +16,7 @@ class MediaOptionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         allSermonsView.layer.cornerRadius = 10
         liveSermonView.layer.cornerRadius = 10
         allSermonsButton.layer.cornerRadius = 10

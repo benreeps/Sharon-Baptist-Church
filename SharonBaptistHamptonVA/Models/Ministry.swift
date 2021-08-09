@@ -15,6 +15,7 @@ class Ministry {
     let url: NSURL
     
     init(title: String, image: UIImage, url: NSURL) {
+        
         self.title = title
         self.image = image
         self.url = url

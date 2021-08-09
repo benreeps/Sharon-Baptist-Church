@@ -43,15 +43,16 @@ class DetailViewController: UIViewController {
         textView.text = video!.description
         currentUrl = currentUrlString + video!.videoId
     }
+    
     @IBAction func shareButtonPressed(_ sender: UIButton) {
         if currentUrl != " "{
             let items: [Any] = [URL(string: "\(currentUrl)")!]
             let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
             present(ac, animated: true)
+            
         } else {
+            
             return
         }
     }
-    
-    
 }

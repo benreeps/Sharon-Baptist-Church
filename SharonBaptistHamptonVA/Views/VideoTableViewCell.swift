@@ -13,8 +13,6 @@ class VideoTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var shareButton: UIButton!
     
-   // @IBOutlet weak var dateLabel: UILabel!
-    
     var video:Video?
     
     func setCell(_ v:Video) {
@@ -49,16 +47,19 @@ class VideoTableViewCell: UITableViewCell {
                 CacheManager.setVideoCache(url!.absoluteString, data)
                 
                 if url!.absoluteString != self.video?.thumbnail {
+                    
                     return
                 }
                 
                 let image = UIImage(data: data!)
                 
                 DispatchQueue.main.async {
+                    
                     self.thumbnailImageView.image = image
                 }
             }
         }
+        
         dataTask.resume()
     }
     
