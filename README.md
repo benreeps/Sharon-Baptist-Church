@@ -6,11 +6,14 @@
 
 # iOS App for Sharon Baptist Church, Hampton VA 
 
-## Configuration
+### Software Requirements
+**Mobile:**
+- IOS 14.4 OR LATER
+- Must enable location services in order provide navigation rout.<br />
 
-### Software Requirements 
-- Mobile: IOS 14.4 OR LATER
-- Must enable location services in order provide navigation rout. 
+**Pods:**
+- 'youtube-ios-player-helper'
+
 
 ## Setup for Developers
 1. Make sure you have Xcode IDE downloaded on your machine for software development for iOS.<br />
@@ -19,3 +22,13 @@
 4. Open Github Desktop, click on Clone Repository in File Menu. Clone the forked repo to get a local copy on your system.<br />
 5. Fetch the latest version of code from the appropriate branch (usually "develop").<br />
 
+<p align="center" >
+<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/home.png" height="572" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/media.png" height="572" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/podcast.png" height="572" >
+</p>
+<p align="center" >
+<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/sermons.png" height="572"/> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/maps.png" height="572" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/Ministries.png" height="572" >
+</p>
