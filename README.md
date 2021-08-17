@@ -7,13 +7,13 @@
 # iOS App for Sharon Baptist Church, Hampton VA 
 
 ### Software Requirements
+
 **Mobile:**
 - IOS 14.4 OR LATER
 - Must enable location services in order provide navigation rout.<br />
-
+- 
 **Pods:**
 - 'youtube-ios-player-helper'
-
 
 ## Setup for Developers
 1. Make sure you have Xcode IDE downloaded on your machine for software development for iOS.<br />
@@ -21,7 +21,6 @@
 3. Make sure you have installed [Github Desktop(for Mac)](https://desktop.github.com/).<br />
 4. Open Github Desktop, click on Clone Repository in File Menu. Clone the forked repo to get a local copy on your system.<br />
 5. Fetch the latest version of code from the appropriate branch (usually "develop").<br />
-
 <p align="center" >
 <img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/home.png" height="475" /> &nbsp; &nbsp; &nbsp;
 <img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/media.png" height="475" /> &nbsp; &nbsp; &nbsp;
@@ -33,5 +32,14 @@
 <img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/Ministries.png" height="475" >
 </p>
 
+## Code practices
+Please help in following the best practice to make it easy for the reviewer as well as the contributor. e
+* Single commit per pull request
+* Brief yet descriptive commit messages 
+* Follow uniform design practices. The design language must be consistent throughout the app.
+* The pull request will not get merged until and unless the commits are squashed. In case there are multiple commits on the PR, the commit author needs to squash them and not the maintainers cherrypicking and merging squashes.
+* If the PR is related to any front end change, please attach relevant screenshots in the pull request description.
+* Please follow the guides and code standards: [Swift Style Guide](https://github.com/linkedin/swift-style-guide)
+* Please follow the good iOS development practices: [iOS Good Practices](https://github.com/futurice/ios-good-practices)
 ## License
 **MIT License**
