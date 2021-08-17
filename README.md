@@ -5,3 +5,17 @@
 <p align="center"><img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/appStore.png" height="700" align="center"></p>
 
 # iOS App for Sharon Baptist Church, Hampton VA 
+
+## Configuration
+
+### Software Requirements 
+- Mobile: IOS 14.4 OR LATER
+- Must enable location services in order provide navigation rout. 
+
+## Setup for Developers
+1. Make sure you have Xcode IDE downloaded on your machine for software development for iOS.<br />
+2. Fork the Sharon-Baptist-Church project. Go to https://github.com/benreeps/Sharon-Baptist-Church.git and click on Fork in the top right corner. Fork the repo on your Github id. Make sure that you don’t have any existing repo with the same name in your profile else there will be conflicts.<br />
+3. Make sure you have installed [Github Desktop(for Mac)](https://desktop.github.com/).<br />
+4. Open Github Desktop, click on Clone Repository in File Menu. Clone the forked repo to get a local copy on your system.<br />
+5. Fetch the latest version of code from the appropriate branch (usually "develop").<br />
+
