@@ -6,6 +6,6 @@ target 'SharonBaptistHamptonVA' do
   use_frameworks!
 
   # Pods for SharonBaptistHamptonVA
-  pod "youtube-ios-player-helper", "~> 1.0.3"
+  pod "youtube-ios-player-helper"
   
 end
