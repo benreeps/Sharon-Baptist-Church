@@ -23,12 +23,12 @@
 5. Fetch the latest version of code from the appropriate branch (usually "develop").<br />
 
 <p align="center" >
-<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/home.png" height="572" /> &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/media.png" height="572" /> &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/podcast.png" height="572" >
+<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/home.png" height="565" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/media.png" height="565" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/podcast.png" height="565" >
 </p>
 <p align="center" >
-<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/sermons.png" height="572"/> &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/maps.png" height="572" /> &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/Ministries.png" height="572" >
+<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/sermons.png" height="565"/> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/maps.png" height="565" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/Ministries.png" height="565" >
 </p>
