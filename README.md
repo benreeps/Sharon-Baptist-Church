@@ -32,3 +32,6 @@
 <img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/maps.png" height="475" /> &nbsp; &nbsp; &nbsp;
 <img src="https://github.com/benreeps/Sharon-Baptist-Church/blob/master/Images/Ministries.png" height="475" >
 </p>
+
+## License
+**MIT License**
